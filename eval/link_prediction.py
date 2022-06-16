@@ -89,9 +89,9 @@ def evaluate_classifier(train_pos, train_neg, val_pos, val_neg, test_pos, test_n
         train_neg_labels = np.array([-1] * len(train_neg_feats))
         val_pos_labels = np.array([1] * len(val_pos_feats))
         val_neg_labels = np.array([-1] * len(val_neg_feats))
-
         test_pos_labels = np.array([1] * len(test_pos_feats))
         test_neg_labels = np.array([-1] * len(test_neg_feats))
+
         train_data = np.vstack((train_pos_feats, train_neg_feats))
         train_labels = np.append(train_pos_labels, train_neg_labels)
 

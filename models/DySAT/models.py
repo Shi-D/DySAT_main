@@ -93,10 +93,10 @@ class DySAT(Model):
         self.num_features_nonzero = num_features_nonzero
         self.degrees = degrees
         self.num_features = num_features
-        self.structural_head_config = map(int, FLAGS.structural_head_config.split(","))
-        self.structural_layer_config = map(int, FLAGS.structural_layer_config.split(","))
-        self.temporal_head_config = map(int, FLAGS.temporal_head_config.split(","))
-        self.temporal_layer_config = map(int, FLAGS.temporal_layer_config.split(","))
+        self.structural_head_config = list(map(int, FLAGS.structural_head_config.split(",")))
+        self.structural_layer_config = list(map(int, FLAGS.structural_layer_config.split(",")))
+        self.temporal_head_config = list(map(int, FLAGS.temporal_head_config.split(",")))
+        self.temporal_layer_config = list(map(int, FLAGS.temporal_layer_config.split(",")))
         self._build()
 
     def _build(self):
@@ -121,7 +121,8 @@ class DySAT(Model):
                                                       self.temporal_layer_config,
                                                       self.placeholders['spatial_drop'],
                                                       self.placeholders['temporal_drop'],
-                                                      self.placeholders['adjs'])
+                                                      self.placeholders['adjs'])  # (?, 4, 128)
+
         self._loss()
         self.init_optimizer()
 
@@ -154,7 +155,7 @@ class DySAT(Model):
             self.temporal_attention_layers.append(temporal_layer)
 
         # 3: Structural Attention forward
-        input_list = self.placeholders['features']  # List of t feature matrices. [N x F]
+        input_list = self.placeholders['features']  # [T x N x F]
         for layer in self.structural_attention_layers:
             attn_outputs = []
             for t in range(0, self.num_time_steps):
@@ -175,7 +176,7 @@ class DySAT(Model):
         # 5: Temporal Attention forward
         temporal_inputs = structural_outputs
         for temporal_layer in self.temporal_attention_layers:
-            outputs = temporal_layer(temporal_inputs)  # [N, T, F]
+            outputs = temporal_layer(temporal_inputs)  # [N, T, F]  # (?, 4, 128)
             temporal_inputs = outputs
             self.attn_wts_all.append(temporal_layer.attn_wts_all)
         return outputs

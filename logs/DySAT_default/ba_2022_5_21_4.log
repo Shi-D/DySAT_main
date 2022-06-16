@@ -1,0 +1,769 @@
+05/21/2022 20:25:09 - INFO: dict_items([('logtostderr', False), ('alsologtostderr', False), ('log_dir', ''), ('v', -1), ('verbosity', -1), ('logger_levels', {}), ('stderrthreshold', 'fatal'), ('showprefixforinfo', True), ('run_with_pdb', False), ('pdb_post_mortem', False), ('pdb', False), ('run_with_profiling', False), ('profile_file', None), ('use_cprofile_for_profiling', True), ('only_check_args', False), ('op_conversion_fallback_to_while_loop', False), ('test_random_seed', 301), ('test_srcdir', ''), ('test_tmpdir', '/var/folders/05/71tx_fd108v2vnt20mtb21y40000gp/T/absl_testing'), ('test_randomize_ordering_seed', ''), ('xml_output_file', ''), ('base_model', 'DySAT'), ('model', 'default'), ('dataset', 'ba'), ('filepath', './data/DY-BA/'), ('seed_num', 10), ('all_node_num', 100), ('num_features', 1), ('graph_num', 4), ('time_steps', 4), ('GPU_ID', 0), ('epochs', 1), ('batch_size', 512), ('featureless', False), ('max_gradient_norm', 1.0), ('test_freq', 1), ('val_freq', 1), ('neg_sample_size', 10), ('walk_len', 40), ('neg_weight', 1.0), ('learning_rate', 0.001), ('spatial_drop', 0.1), ('temporal_drop', 0.5), ('weight_decay', 0.0005), ('use_residual', False), ('structural_head_config', '16'), ('structural_layer_config', '128'), ('temporal_head_config', '16'), ('temporal_layer_config', '128'), ('position_ffn', True), ('optimizer', 'adam'), ('seed', 7), ('save_dir', 'output'), ('logs_dir', 'logs'), ('csv_dir', 'csv'), ('model_dir', 'model'), ('window', -1)])
+05/21/2022 20:25:26 - INFO: dict_items([('logtostderr', False), ('alsologtostderr', False), ('log_dir', ''), ('v', -1), ('verbosity', -1), ('logger_levels', {}), ('stderrthreshold', 'fatal'), ('showprefixforinfo', True), ('run_with_pdb', False), ('pdb_post_mortem', False), ('pdb', False), ('run_with_profiling', False), ('profile_file', None), ('use_cprofile_for_profiling', True), ('only_check_args', False), ('op_conversion_fallback_to_while_loop', False), ('test_random_seed', 301), ('test_srcdir', ''), ('test_tmpdir', '/var/folders/05/71tx_fd108v2vnt20mtb21y40000gp/T/absl_testing'), ('test_randomize_ordering_seed', ''), ('xml_output_file', ''), ('base_model', 'DySAT'), ('model', 'default'), ('dataset', 'ba'), ('filepath', './data/DY-BA/'), ('seed_num', 10), ('all_node_num', 100), ('num_features', 1), ('graph_num', 4), ('time_steps', 4), ('GPU_ID', 0), ('epochs', 1), ('batch_size', 512), ('featureless', False), ('max_gradient_norm', 1.0), ('test_freq', 1), ('val_freq', 1), ('neg_sample_size', 10), ('walk_len', 40), ('neg_weight', 1.0), ('learning_rate', 0.001), ('spatial_drop', 0.1), ('temporal_drop', 0.5), ('weight_decay', 0.0005), ('use_residual', False), ('structural_head_config', '16'), ('structural_layer_config', '128'), ('temporal_head_config', '16'), ('temporal_layer_config', '128'), ('position_ffn', True), ('optimizer', 'adam'), ('seed', 7), ('save_dir', 'output'), ('logs_dir', 'logs'), ('csv_dir', 'csv'), ('model_dir', 'model'), ('window', -1)])
+05/21/2022 20:26:28 - INFO: dict_items([('logtostderr', False), ('alsologtostderr', False), ('log_dir', ''), ('v', -1), ('verbosity', -1), ('logger_levels', {}), ('stderrthreshold', 'fatal'), ('showprefixforinfo', True), ('run_with_pdb', False), ('pdb_post_mortem', False), ('pdb', False), ('run_with_profiling', False), ('profile_file', None), ('use_cprofile_for_profiling', True), ('only_check_args', False), ('op_conversion_fallback_to_while_loop', False), ('test_random_seed', 301), ('test_srcdir', ''), ('test_tmpdir', '/var/folders/05/71tx_fd108v2vnt20mtb21y40000gp/T/absl_testing'), ('test_randomize_ordering_seed', ''), ('xml_output_file', ''), ('base_model', 'DySAT'), ('model', 'default'), ('dataset', 'ba'), ('filepath', './data/DY-BA/'), ('seed_num', 10), ('all_node_num', 100), ('num_features', 1), ('graph_num', 4), ('time_steps', 4), ('GPU_ID', 0), ('epochs', 1), ('batch_size', 512), ('featureless', False), ('max_gradient_norm', 1.0), ('test_freq', 1), ('val_freq', 1), ('neg_sample_size', 10), ('walk_len', 40), ('neg_weight', 1.0), ('learning_rate', 0.001), ('spatial_drop', 0.1), ('temporal_drop', 0.5), ('weight_decay', 0.0005), ('use_residual', False), ('structural_head_config', '16'), ('structural_layer_config', '128'), ('temporal_head_config', '16'), ('temporal_layer_config', '128'), ('position_ffn', True), ('optimizer', 'adam'), ('seed', 7), ('save_dir', 'output'), ('logs_dir', 'logs'), ('csv_dir', 'csv'), ('model_dir', 'model'), ('window', -1)])
+05/21/2022 20:41:21 - INFO: dict_items([('logtostderr', False), ('alsologtostderr', False), ('log_dir', ''), ('v', -1), ('verbosity', -1), ('logger_levels', {}), ('stderrthreshold', 'fatal'), ('showprefixforinfo', True), ('run_with_pdb', False), ('pdb_post_mortem', False), ('pdb', False), ('run_with_profiling', False), ('profile_file', None), ('use_cprofile_for_profiling', True), ('only_check_args', False), ('op_conversion_fallback_to_while_loop', False), ('test_random_seed', 301), ('test_srcdir', ''), ('test_tmpdir', '/var/folders/05/71tx_fd108v2vnt20mtb21y40000gp/T/absl_testing'), ('test_randomize_ordering_seed', ''), ('xml_output_file', ''), ('base_model', 'DySAT'), ('model', 'default'), ('dataset', 'ba'), ('filepath', './data/DY-BA/'), ('seed_num', 10), ('all_node_num', 100), ('num_features', 1), ('graph_num', 4), ('time_steps', 4), ('GPU_ID', 0), ('epochs', 1), ('batch_size', 512), ('featureless', False), ('max_gradient_norm', 1.0), ('test_freq', 1), ('val_freq', 1), ('neg_sample_size', 10), ('walk_len', 40), ('neg_weight', 1.0), ('learning_rate', 0.001), ('spatial_drop', 0.1), ('temporal_drop', 0.5), ('weight_decay', 0.0005), ('use_residual', False), ('structural_head_config', '16'), ('structural_layer_config', '128'), ('temporal_head_config', '16'), ('temporal_layer_config', '128'), ('position_ffn', True), ('optimizer', 'adam'), ('seed', 7), ('save_dir', 'output'), ('logs_dir', 'logs'), ('csv_dir', 'csv'), ('model_dir', 'model'), ('window', -1)])
+05/21/2022 20:57:46 - INFO: dict_items([('logtostderr', False), ('alsologtostderr', False), ('log_dir', ''), ('v', -1), ('verbosity', -1), ('logger_levels', {}), ('stderrthreshold', 'fatal'), ('showprefixforinfo', True), ('run_with_pdb', False), ('pdb_post_mortem', False), ('pdb', False), ('run_with_profiling', False), ('profile_file', None), ('use_cprofile_for_profiling', True), ('only_check_args', False), ('op_conversion_fallback_to_while_loop', False), ('test_random_seed', 301), ('test_srcdir', ''), ('test_tmpdir', '/var/folders/05/71tx_fd108v2vnt20mtb21y40000gp/T/absl_testing'), ('test_randomize_ordering_seed', ''), ('xml_output_file', ''), ('base_model', 'DySAT'), ('model', 'default'), ('dataset', 'ba'), ('filepath', './data/DY-BA/'), ('seed_num', 10), ('all_node_num', 100), ('num_features', 1), ('graph_num', 4), ('time_steps', 4), ('GPU_ID', 0), ('epochs', 1), ('batch_size', 512), ('featureless', False), ('max_gradient_norm', 1.0), ('test_freq', 1), ('val_freq', 1), ('neg_sample_size', 10), ('walk_len', 40), ('neg_weight', 1.0), ('learning_rate', 0.001), ('spatial_drop', 0.1), ('temporal_drop', 0.5), ('weight_decay', 0.0005), ('use_residual', False), ('structural_head_config', '16'), ('structural_layer_config', '128'), ('temporal_head_config', '16'), ('temporal_layer_config', '128'), ('position_ffn', True), ('optimizer', 'adam'), ('seed', 7), ('save_dir', 'output'), ('logs_dir', 'logs'), ('csv_dir', 'csv'), ('model_dir', 'model'), ('window', -1)])
+05/21/2022 20:59:50 - INFO: dict_items([('logtostderr', False), ('alsologtostderr', False), ('log_dir', ''), ('v', -1), ('verbosity', -1), ('logger_levels', {}), ('stderrthreshold', 'fatal'), ('showprefixforinfo', True), ('run_with_pdb', False), ('pdb_post_mortem', False), ('pdb', False), ('run_with_profiling', False), ('profile_file', None), ('use_cprofile_for_profiling', True), ('only_check_args', False), ('op_conversion_fallback_to_while_loop', False), ('test_random_seed', 301), ('test_srcdir', ''), ('test_tmpdir', '/var/folders/05/71tx_fd108v2vnt20mtb21y40000gp/T/absl_testing'), ('test_randomize_ordering_seed', ''), ('xml_output_file', ''), ('base_model', 'DySAT'), ('model', 'default'), ('dataset', 'ba'), ('filepath', './data/DY-BA/'), ('seed_num', 10), ('all_node_num', 100), ('num_features', 1), ('graph_num', 4), ('time_steps', 4), ('GPU_ID', 0), ('epochs', 1), ('batch_size', 512), ('featureless', False), ('max_gradient_norm', 1.0), ('test_freq', 1), ('val_freq', 1), ('neg_sample_size', 10), ('walk_len', 40), ('neg_weight', 1.0), ('learning_rate', 0.001), ('spatial_drop', 0.1), ('temporal_drop', 0.5), ('weight_decay', 0.0005), ('use_residual', False), ('structural_head_config', '16'), ('structural_layer_config', '128'), ('temporal_head_config', '16'), ('temporal_layer_config', '128'), ('position_ffn', True), ('optimizer', 'adam'), ('seed', 7), ('save_dir', 'output'), ('logs_dir', 'logs'), ('csv_dir', 'csv'), ('model_dir', 'model'), ('window', -1)])
+05/21/2022 21:00:28 - INFO: dict_items([('logtostderr', False), ('alsologtostderr', False), ('log_dir', ''), ('v', -1), ('verbosity', -1), ('logger_levels', {}), ('stderrthreshold', 'fatal'), ('showprefixforinfo', True), ('run_with_pdb', False), ('pdb_post_mortem', False), ('pdb', False), ('run_with_profiling', False), ('profile_file', None), ('use_cprofile_for_profiling', True), ('only_check_args', False), ('op_conversion_fallback_to_while_loop', False), ('test_random_seed', 301), ('test_srcdir', ''), ('test_tmpdir', '/var/folders/05/71tx_fd108v2vnt20mtb21y40000gp/T/absl_testing'), ('test_randomize_ordering_seed', ''), ('xml_output_file', ''), ('base_model', 'DySAT'), ('model', 'default'), ('dataset', 'ba'), ('filepath', './data/DY-BA/'), ('seed_num', 10), ('all_node_num', 100), ('num_features', 1), ('graph_num', 4), ('time_steps', 4), ('GPU_ID', 0), ('epochs', 1), ('batch_size', 512), ('featureless', False), ('max_gradient_norm', 1.0), ('test_freq', 1), ('val_freq', 1), ('neg_sample_size', 10), ('walk_len', 40), ('neg_weight', 1.0), ('learning_rate', 0.001), ('spatial_drop', 0.1), ('temporal_drop', 0.5), ('weight_decay', 0.0005), ('use_residual', False), ('structural_head_config', '16'), ('structural_layer_config', '128'), ('temporal_head_config', '16'), ('temporal_layer_config', '128'), ('position_ffn', True), ('optimizer', 'adam'), ('seed', 7), ('save_dir', 'output'), ('logs_dir', 'logs'), ('csv_dir', 'csv'), ('model_dir', 'model'), ('window', -1)])
+05/21/2022 21:02:49 - INFO: dict_items([('logtostderr', False), ('alsologtostderr', False), ('log_dir', ''), ('v', -1), ('verbosity', -1), ('logger_levels', {}), ('stderrthreshold', 'fatal'), ('showprefixforinfo', True), ('run_with_pdb', False), ('pdb_post_mortem', False), ('pdb', False), ('run_with_profiling', False), ('profile_file', None), ('use_cprofile_for_profiling', True), ('only_check_args', False), ('op_conversion_fallback_to_while_loop', False), ('test_random_seed', 301), ('test_srcdir', ''), ('test_tmpdir', '/var/folders/05/71tx_fd108v2vnt20mtb21y40000gp/T/absl_testing'), ('test_randomize_ordering_seed', ''), ('xml_output_file', ''), ('base_model', 'DySAT'), ('model', 'default'), ('dataset', 'ba'), ('filepath', './data/DY-BA/'), ('seed_num', 10), ('all_node_num', 100), ('num_features', 1), ('graph_num', 4), ('time_steps', 4), ('GPU_ID', 0), ('epochs', 1), ('batch_size', 512), ('featureless', False), ('max_gradient_norm', 1.0), ('test_freq', 1), ('val_freq', 1), ('neg_sample_size', 10), ('walk_len', 40), ('neg_weight', 1.0), ('learning_rate', 0.001), ('spatial_drop', 0.1), ('temporal_drop', 0.5), ('weight_decay', 0.0005), ('use_residual', False), ('structural_head_config', '16'), ('structural_layer_config', '128'), ('temporal_head_config', '16'), ('temporal_layer_config', '128'), ('position_ffn', True), ('optimizer', 'adam'), ('seed', 7), ('save_dir', 'output'), ('logs_dir', 'logs'), ('csv_dir', 'csv'), ('model_dir', 'model'), ('window', -1)])
+05/21/2022 21:03:06 - INFO: dict_items([('logtostderr', False), ('alsologtostderr', False), ('log_dir', ''), ('v', -1), ('verbosity', -1), ('logger_levels', {}), ('stderrthreshold', 'fatal'), ('showprefixforinfo', True), ('run_with_pdb', False), ('pdb_post_mortem', False), ('pdb', False), ('run_with_profiling', False), ('profile_file', None), ('use_cprofile_for_profiling', True), ('only_check_args', False), ('op_conversion_fallback_to_while_loop', False), ('test_random_seed', 301), ('test_srcdir', ''), ('test_tmpdir', '/var/folders/05/71tx_fd108v2vnt20mtb21y40000gp/T/absl_testing'), ('test_randomize_ordering_seed', ''), ('xml_output_file', ''), ('base_model', 'DySAT'), ('model', 'default'), ('dataset', 'ba'), ('filepath', './data/DY-BA/'), ('seed_num', 10), ('all_node_num', 100), ('num_features', 1), ('graph_num', 4), ('time_steps', 4), ('GPU_ID', 0), ('epochs', 1), ('batch_size', 512), ('featureless', False), ('max_gradient_norm', 1.0), ('test_freq', 1), ('val_freq', 1), ('neg_sample_size', 10), ('walk_len', 40), ('neg_weight', 1.0), ('learning_rate', 0.001), ('spatial_drop', 0.1), ('temporal_drop', 0.5), ('weight_decay', 0.0005), ('use_residual', False), ('structural_head_config', '16'), ('structural_layer_config', '128'), ('temporal_head_config', '16'), ('temporal_layer_config', '128'), ('position_ffn', True), ('optimizer', 'adam'), ('seed', 7), ('save_dir', 'output'), ('logs_dir', 'logs'), ('csv_dir', 'csv'), ('model_dir', 'model'), ('window', -1)])
+05/21/2022 21:03:06 - INFO: # train: 89, # val: 89, # test: 267
+05/21/2022 21:28:42 - INFO: dict_items([('logtostderr', False), ('alsologtostderr', False), ('log_dir', ''), ('v', -1), ('verbosity', -1), ('logger_levels', {}), ('stderrthreshold', 'fatal'), ('showprefixforinfo', True), ('run_with_pdb', False), ('pdb_post_mortem', False), ('pdb', False), ('run_with_profiling', False), ('profile_file', None), ('use_cprofile_for_profiling', True), ('only_check_args', False), ('op_conversion_fallback_to_while_loop', False), ('test_random_seed', 301), ('test_srcdir', ''), ('test_tmpdir', '/var/folders/05/71tx_fd108v2vnt20mtb21y40000gp/T/absl_testing'), ('test_randomize_ordering_seed', ''), ('xml_output_file', ''), ('base_model', 'DySAT'), ('model', 'default'), ('dataset', 'ba'), ('filepath', './data/DY-BA/'), ('seed_num', 10), ('all_node_num', 100), ('num_features', 1), ('graph_num', 4), ('time_steps', 4), ('GPU_ID', 0), ('epochs', 1), ('batch_size', 512), ('featureless', False), ('max_gradient_norm', 1.0), ('test_freq', 1), ('val_freq', 1), ('neg_sample_size', 10), ('walk_len', 40), ('neg_weight', 1.0), ('learning_rate', 0.001), ('spatial_drop', 0.1), ('temporal_drop', 0.5), ('weight_decay', 0.0005), ('use_residual', False), ('structural_head_config', '16'), ('structural_layer_config', '128'), ('temporal_head_config', '16'), ('temporal_layer_config', '128'), ('position_ffn', True), ('optimizer', 'adam'), ('seed', 7), ('save_dir', 'output'), ('logs_dir', 'logs'), ('csv_dir', 'csv'), ('model_dir', 'model'), ('window', -1)])
+05/21/2022 21:28:42 - INFO: # train: 89, # val: 89, # test: 267
+05/21/2022 21:29:36 - INFO: dict_items([('logtostderr', False), ('alsologtostderr', False), ('log_dir', ''), ('v', -1), ('verbosity', -1), ('logger_levels', {}), ('stderrthreshold', 'fatal'), ('showprefixforinfo', True), ('run_with_pdb', False), ('pdb_post_mortem', False), ('pdb', False), ('run_with_profiling', False), ('profile_file', None), ('use_cprofile_for_profiling', True), ('only_check_args', False), ('op_conversion_fallback_to_while_loop', False), ('test_random_seed', 301), ('test_srcdir', ''), ('test_tmpdir', '/var/folders/05/71tx_fd108v2vnt20mtb21y40000gp/T/absl_testing'), ('test_randomize_ordering_seed', ''), ('xml_output_file', ''), ('base_model', 'DySAT'), ('model', 'default'), ('dataset', 'ba'), ('filepath', './data/DY-BA/'), ('seed_num', 10), ('all_node_num', 100), ('num_features', 1), ('graph_num', 4), ('time_steps', 4), ('GPU_ID', 0), ('epochs', 1), ('batch_size', 512), ('featureless', False), ('max_gradient_norm', 1.0), ('test_freq', 1), ('val_freq', 1), ('neg_sample_size', 10), ('walk_len', 40), ('neg_weight', 1.0), ('learning_rate', 0.001), ('spatial_drop', 0.1), ('temporal_drop', 0.5), ('weight_decay', 0.0005), ('use_residual', False), ('structural_head_config', '16'), ('structural_layer_config', '128'), ('temporal_head_config', '16'), ('temporal_layer_config', '128'), ('position_ffn', True), ('optimizer', 'adam'), ('seed', 7), ('save_dir', 'output'), ('logs_dir', 'logs'), ('csv_dir', 'csv'), ('model_dir', 'model'), ('window', -1)])
+05/21/2022 21:29:36 - INFO: # train: 89, # val: 89, # test: 267
+05/21/2022 21:30:24 - INFO: dict_items([('logtostderr', False), ('alsologtostderr', False), ('log_dir', ''), ('v', -1), ('verbosity', -1), ('logger_levels', {}), ('stderrthreshold', 'fatal'), ('showprefixforinfo', True), ('run_with_pdb', False), ('pdb_post_mortem', False), ('pdb', False), ('run_with_profiling', False), ('profile_file', None), ('use_cprofile_for_profiling', True), ('only_check_args', False), ('op_conversion_fallback_to_while_loop', False), ('test_random_seed', 301), ('test_srcdir', ''), ('test_tmpdir', '/var/folders/05/71tx_fd108v2vnt20mtb21y40000gp/T/absl_testing'), ('test_randomize_ordering_seed', ''), ('xml_output_file', ''), ('base_model', 'DySAT'), ('model', 'default'), ('dataset', 'ba'), ('filepath', './data/DY-BA/'), ('seed_num', 10), ('all_node_num', 100), ('num_features', 1), ('graph_num', 4), ('time_steps', 4), ('GPU_ID', 0), ('epochs', 1), ('batch_size', 512), ('featureless', False), ('max_gradient_norm', 1.0), ('test_freq', 1), ('val_freq', 1), ('neg_sample_size', 10), ('walk_len', 40), ('neg_weight', 1.0), ('learning_rate', 0.001), ('spatial_drop', 0.1), ('temporal_drop', 0.5), ('weight_decay', 0.0005), ('use_residual', False), ('structural_head_config', '16'), ('structural_layer_config', '128'), ('temporal_head_config', '16'), ('temporal_layer_config', '128'), ('position_ffn', True), ('optimizer', 'adam'), ('seed', 7), ('save_dir', 'output'), ('logs_dir', 'logs'), ('csv_dir', 'csv'), ('model_dir', 'model'), ('window', -1)])
+05/21/2022 21:30:24 - INFO: # train: 89, # val: 89, # test: 267
+05/21/2022 21:31:18 - INFO: dict_items([('logtostderr', False), ('alsologtostderr', False), ('log_dir', ''), ('v', -1), ('verbosity', -1), ('logger_levels', {}), ('stderrthreshold', 'fatal'), ('showprefixforinfo', True), ('run_with_pdb', False), ('pdb_post_mortem', False), ('pdb', False), ('run_with_profiling', False), ('profile_file', None), ('use_cprofile_for_profiling', True), ('only_check_args', False), ('op_conversion_fallback_to_while_loop', False), ('test_random_seed', 301), ('test_srcdir', ''), ('test_tmpdir', '/var/folders/05/71tx_fd108v2vnt20mtb21y40000gp/T/absl_testing'), ('test_randomize_ordering_seed', ''), ('xml_output_file', ''), ('base_model', 'DySAT'), ('model', 'default'), ('dataset', 'ba'), ('filepath', './data/DY-BA/'), ('seed_num', 10), ('all_node_num', 100), ('num_features', 1), ('graph_num', 4), ('time_steps', 4), ('GPU_ID', 0), ('epochs', 1), ('batch_size', 512), ('featureless', False), ('max_gradient_norm', 1.0), ('test_freq', 1), ('val_freq', 1), ('neg_sample_size', 10), ('walk_len', 40), ('neg_weight', 1.0), ('learning_rate', 0.001), ('spatial_drop', 0.1), ('temporal_drop', 0.5), ('weight_decay', 0.0005), ('use_residual', False), ('structural_head_config', '16'), ('structural_layer_config', '128'), ('temporal_head_config', '16'), ('temporal_layer_config', '128'), ('position_ffn', True), ('optimizer', 'adam'), ('seed', 7), ('save_dir', 'output'), ('logs_dir', 'logs'), ('csv_dir', 'csv'), ('model_dir', 'model'), ('window', -1)])
+05/21/2022 21:31:18 - INFO: # train: 89, # val: 89, # test: 267
+05/21/2022 21:31:18 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/train.py:189: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+05/21/2022 21:31:18 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/train.py:191: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+05/21/2022 21:31:18 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/train.py:172: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+05/21/2022 21:31:18 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/train.py:177: The name tf.sparse_placeholder is deprecated. Please use tf.compat.v1.sparse_placeholder instead.
+
+05/21/2022 21:32:33 - INFO: dict_items([('logtostderr', False), ('alsologtostderr', False), ('log_dir', ''), ('v', -1), ('verbosity', -1), ('logger_levels', {}), ('stderrthreshold', 'fatal'), ('showprefixforinfo', True), ('run_with_pdb', False), ('pdb_post_mortem', False), ('pdb', False), ('run_with_profiling', False), ('profile_file', None), ('use_cprofile_for_profiling', True), ('only_check_args', False), ('op_conversion_fallback_to_while_loop', False), ('test_random_seed', 301), ('test_srcdir', ''), ('test_tmpdir', '/var/folders/05/71tx_fd108v2vnt20mtb21y40000gp/T/absl_testing'), ('test_randomize_ordering_seed', ''), ('xml_output_file', ''), ('base_model', 'DySAT'), ('model', 'default'), ('dataset', 'ba'), ('filepath', './data/DY-BA/'), ('seed_num', 10), ('all_node_num', 100), ('num_features', 1), ('graph_num', 4), ('time_steps', 4), ('GPU_ID', 0), ('epochs', 1), ('batch_size', 512), ('featureless', False), ('max_gradient_norm', 1.0), ('test_freq', 1), ('val_freq', 1), ('neg_sample_size', 10), ('walk_len', 40), ('neg_weight', 1.0), ('learning_rate', 0.001), ('spatial_drop', 0.1), ('temporal_drop', 0.5), ('weight_decay', 0.0005), ('use_residual', False), ('structural_head_config', '16'), ('structural_layer_config', '128'), ('temporal_head_config', '16'), ('temporal_layer_config', '128'), ('position_ffn', True), ('optimizer', 'adam'), ('seed', 7), ('save_dir', 'output'), ('logs_dir', 'logs'), ('csv_dir', 'csv'), ('model_dir', 'model'), ('window', -1)])
+05/21/2022 21:32:33 - INFO: # train: 89, # val: 89, # test: 267
+05/21/2022 21:32:33 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/train.py:189: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+05/21/2022 21:32:33 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/train.py:191: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+05/21/2022 21:32:33 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/train.py:172: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+05/21/2022 21:32:33 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/train.py:177: The name tf.sparse_placeholder is deprecated. Please use tf.compat.v1.sparse_placeholder instead.
+
+05/21/2022 21:32:34 - WARNING: 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+05/21/2022 21:32:35 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:83: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+05/21/2022 21:32:35 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:85: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+05/21/2022 21:32:36 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:220: The name tf.sparse_tensor_dense_matmul is deprecated. Please use tf.sparse.sparse_dense_matmul instead.
+
+05/21/2022 21:32:36 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:226: conv1d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv1D` instead.
+05/21/2022 21:32:36 - WARNING: From /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/tensorflow_core/python/layers/convolutional.py:218: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+05/21/2022 21:32:36 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:236: The name tf.sparse_softmax is deprecated. Please use tf.sparse.softmax instead.
+
+05/21/2022 21:32:36 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:240: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+05/21/2022 21:33:49 - INFO: dict_items([('logtostderr', False), ('alsologtostderr', False), ('log_dir', ''), ('v', -1), ('verbosity', -1), ('logger_levels', {}), ('stderrthreshold', 'fatal'), ('showprefixforinfo', True), ('run_with_pdb', False), ('pdb_post_mortem', False), ('pdb', False), ('run_with_profiling', False), ('profile_file', None), ('use_cprofile_for_profiling', True), ('only_check_args', False), ('op_conversion_fallback_to_while_loop', False), ('test_random_seed', 301), ('test_srcdir', ''), ('test_tmpdir', '/var/folders/05/71tx_fd108v2vnt20mtb21y40000gp/T/absl_testing'), ('test_randomize_ordering_seed', ''), ('xml_output_file', ''), ('base_model', 'DySAT'), ('model', 'default'), ('dataset', 'ba'), ('filepath', './data/DY-BA/'), ('seed_num', 10), ('all_node_num', 100), ('num_features', 1), ('graph_num', 4), ('time_steps', 4), ('GPU_ID', 0), ('epochs', 1), ('batch_size', 512), ('featureless', False), ('max_gradient_norm', 1.0), ('test_freq', 1), ('val_freq', 1), ('neg_sample_size', 10), ('walk_len', 40), ('neg_weight', 1.0), ('learning_rate', 0.001), ('spatial_drop', 0.1), ('temporal_drop', 0.5), ('weight_decay', 0.0005), ('use_residual', False), ('structural_head_config', '16'), ('structural_layer_config', '128'), ('temporal_head_config', '16'), ('temporal_layer_config', '128'), ('position_ffn', True), ('optimizer', 'adam'), ('seed', 7), ('save_dir', 'output'), ('logs_dir', 'logs'), ('csv_dir', 'csv'), ('model_dir', 'model'), ('window', -1)])
+05/21/2022 21:33:49 - INFO: # train: 89, # val: 89, # test: 267
+05/21/2022 21:33:49 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/train.py:189: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+05/21/2022 21:33:49 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/train.py:191: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+05/21/2022 21:33:49 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/train.py:172: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+05/21/2022 21:33:49 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/train.py:177: The name tf.sparse_placeholder is deprecated. Please use tf.compat.v1.sparse_placeholder instead.
+
+05/21/2022 21:33:49 - WARNING: 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+05/21/2022 21:33:51 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:83: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+05/21/2022 21:33:51 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:85: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+05/21/2022 21:33:51 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:220: The name tf.sparse_tensor_dense_matmul is deprecated. Please use tf.sparse.sparse_dense_matmul instead.
+
+05/21/2022 21:33:51 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:226: conv1d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv1D` instead.
+05/21/2022 21:33:51 - WARNING: From /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/tensorflow_core/python/layers/convolutional.py:218: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+05/21/2022 21:33:51 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:236: The name tf.sparse_softmax is deprecated. Please use tf.sparse.softmax instead.
+
+05/21/2022 21:33:51 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:240: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+05/21/2022 21:33:54 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:129: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+05/21/2022 21:33:54 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:134: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+05/21/2022 21:33:55 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/models.py:198: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+05/21/2022 21:34:02 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/models.py:210: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+05/21/2022 21:34:03 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/train.py:201: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+05/21/2022 21:37:35 - INFO: dict_items([('logtostderr', False), ('alsologtostderr', False), ('log_dir', ''), ('v', -1), ('verbosity', -1), ('logger_levels', {}), ('stderrthreshold', 'fatal'), ('showprefixforinfo', True), ('run_with_pdb', False), ('pdb_post_mortem', False), ('pdb', False), ('run_with_profiling', False), ('profile_file', None), ('use_cprofile_for_profiling', True), ('only_check_args', False), ('op_conversion_fallback_to_while_loop', False), ('test_random_seed', 301), ('test_srcdir', ''), ('test_tmpdir', '/var/folders/05/71tx_fd108v2vnt20mtb21y40000gp/T/absl_testing'), ('test_randomize_ordering_seed', ''), ('xml_output_file', ''), ('base_model', 'DySAT'), ('model', 'default'), ('dataset', 'ba'), ('filepath', './data/DY-BA/'), ('seed_num', 10), ('all_node_num', 100), ('num_features', 1), ('graph_num', 4), ('time_steps', 4), ('GPU_ID', 0), ('epochs', 1), ('batch_size', 512), ('featureless', False), ('max_gradient_norm', 1.0), ('test_freq', 1), ('val_freq', 1), ('neg_sample_size', 10), ('walk_len', 40), ('neg_weight', 1.0), ('learning_rate', 0.001), ('spatial_drop', 0.1), ('temporal_drop', 0.5), ('weight_decay', 0.0005), ('use_residual', False), ('structural_head_config', '16'), ('structural_layer_config', '128'), ('temporal_head_config', '16'), ('temporal_layer_config', '128'), ('position_ffn', True), ('optimizer', 'adam'), ('seed', 7), ('save_dir', 'output'), ('logs_dir', 'logs'), ('csv_dir', 'csv'), ('model_dir', 'model'), ('window', -1)])
+05/21/2022 21:37:35 - INFO: # train: 89, # val: 89, # test: 267
+05/21/2022 21:37:35 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/train.py:189: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+05/21/2022 21:37:35 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/train.py:191: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+05/21/2022 21:37:35 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/train.py:172: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+05/21/2022 21:37:35 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/train.py:177: The name tf.sparse_placeholder is deprecated. Please use tf.compat.v1.sparse_placeholder instead.
+
+05/21/2022 21:37:35 - WARNING: 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+05/21/2022 21:37:37 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:83: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+05/21/2022 21:37:37 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:85: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+05/21/2022 21:37:37 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:220: The name tf.sparse_tensor_dense_matmul is deprecated. Please use tf.sparse.sparse_dense_matmul instead.
+
+05/21/2022 21:37:37 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:226: conv1d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv1D` instead.
+05/21/2022 21:37:37 - WARNING: From /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/tensorflow_core/python/layers/convolutional.py:218: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+05/21/2022 21:37:37 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:236: The name tf.sparse_softmax is deprecated. Please use tf.sparse.softmax instead.
+
+05/21/2022 21:37:37 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:240: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+05/21/2022 21:37:40 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:129: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+05/21/2022 21:37:40 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:134: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+05/21/2022 21:37:41 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/models.py:198: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+05/21/2022 21:37:48 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/models.py:210: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+05/21/2022 21:37:48 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/train.py:201: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+05/21/2022 21:37:57 - INFO: Mini batch Iter: 0 train_loss= 5.43300
+05/21/2022 21:37:57 - INFO: Mini batch Iter: 0 graph_loss= 5.41212
+05/21/2022 21:37:57 - INFO: Mini batch Iter: 0 reg_loss= 0.02087
+05/21/2022 21:37:57 - INFO: Time for Mini batch : 6.766356945037842
+05/21/2022 21:37:57 - INFO: Time for epoch : 6.76085090637207
+05/21/2022 21:37:59 - INFO: Val results at epoch 0: Measure (HAD) AUC: 0.5826915793460421
+05/21/2022 21:37:59 - INFO: Test results at epoch 0: Measure (HAD) AUC: 0.5816044551052757
+05/21/2022 21:37:59 - INFO: Best epoch 0
+05/21/2022 21:37:59 - INFO: Best epoch val results defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x1380577b8>, {'SIGMOID': [0.4258931953036233, 0.4258931953036233], 'HAD': [0.5826915793460421, 0.5826915793460421]})
+
+05/21/2022 21:37:59 - INFO: Best epoch test results defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x10a4117b8>, {'SIGMOID': [0.5130805594130932, 0.5130805594130932], 'HAD': [0.5816044551052757, 0.5816044551052757]})
+
+05/21/2022 21:47:25 - INFO: dict_items([('logtostderr', False), ('alsologtostderr', False), ('log_dir', ''), ('v', -1), ('verbosity', -1), ('logger_levels', {}), ('stderrthreshold', 'fatal'), ('showprefixforinfo', True), ('run_with_pdb', False), ('pdb_post_mortem', False), ('pdb', False), ('run_with_profiling', False), ('profile_file', None), ('use_cprofile_for_profiling', True), ('only_check_args', False), ('op_conversion_fallback_to_while_loop', False), ('test_random_seed', 301), ('test_srcdir', ''), ('test_tmpdir', '/var/folders/05/71tx_fd108v2vnt20mtb21y40000gp/T/absl_testing'), ('test_randomize_ordering_seed', ''), ('xml_output_file', ''), ('base_model', 'DySAT'), ('model', 'default'), ('dataset', 'ba'), ('filepath', './data/DY-BA/'), ('seed_num', 10), ('all_node_num', 100), ('num_features', 1), ('graph_num', 4), ('time_steps', 4), ('GPU_ID', 0), ('epochs', 1), ('batch_size', 5), ('featureless', False), ('max_gradient_norm', 1.0), ('test_freq', 1), ('val_freq', 1), ('neg_sample_size', 10), ('walk_len', 40), ('neg_weight', 1.0), ('learning_rate', 0.001), ('spatial_drop', 0.1), ('temporal_drop', 0.5), ('weight_decay', 0.0005), ('use_residual', False), ('structural_head_config', '16'), ('structural_layer_config', '128'), ('temporal_head_config', '16'), ('temporal_layer_config', '128'), ('position_ffn', True), ('optimizer', 'adam'), ('seed', 7), ('save_dir', 'output'), ('logs_dir', 'logs'), ('csv_dir', 'csv'), ('model_dir', 'model'), ('window', -1)])
+05/21/2022 21:47:25 - INFO: # train: 89, # val: 89, # test: 267
+05/21/2022 21:47:25 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/train.py:189: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+05/21/2022 21:47:25 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/train.py:191: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+05/21/2022 21:47:25 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/train.py:172: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+05/21/2022 21:47:25 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/train.py:177: The name tf.sparse_placeholder is deprecated. Please use tf.compat.v1.sparse_placeholder instead.
+
+05/21/2022 21:47:25 - WARNING: 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+05/21/2022 21:47:27 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:83: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+05/21/2022 21:47:27 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:85: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+05/21/2022 21:47:27 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:220: The name tf.sparse_tensor_dense_matmul is deprecated. Please use tf.sparse.sparse_dense_matmul instead.
+
+05/21/2022 21:47:27 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:226: conv1d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv1D` instead.
+05/21/2022 21:47:27 - WARNING: From /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/tensorflow_core/python/layers/convolutional.py:218: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+05/21/2022 21:47:27 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:236: The name tf.sparse_softmax is deprecated. Please use tf.sparse.softmax instead.
+
+05/21/2022 21:47:27 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:240: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+05/21/2022 21:47:30 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:129: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+05/21/2022 21:47:30 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:134: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+05/21/2022 21:47:31 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/models.py:198: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+05/21/2022 21:47:39 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/models.py:210: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+05/21/2022 21:47:40 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/train.py:201: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 0 train_loss= 5.38265
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 0 graph_loss= 5.36178
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 0 reg_loss= 0.02087
+05/21/2022 21:47:49 - INFO: Time for Mini batch : 7.470935106277466
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 1 train_loss= 4.89105
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 1 graph_loss= 4.87022
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 1 reg_loss= 0.02083
+05/21/2022 21:47:49 - INFO: Time for Mini batch : 0.038372039794921875
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 2 train_loss= 4.65573
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 2 graph_loss= 4.63493
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 2 reg_loss= 0.02079
+05/21/2022 21:47:49 - INFO: Time for Mini batch : 0.061553955078125
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 3 train_loss= 4.42926
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 3 graph_loss= 4.40849
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 3 reg_loss= 0.02077
+05/21/2022 21:47:49 - INFO: Time for Mini batch : 0.06545209884643555
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 4 train_loss= 4.22345
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 4 graph_loss= 4.20272
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 4 reg_loss= 0.02073
+05/21/2022 21:47:49 - INFO: Time for Mini batch : 0.0344538688659668
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 5 train_loss= 4.29168
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 5 graph_loss= 4.27097
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 5 reg_loss= 0.02070
+05/21/2022 21:47:49 - INFO: Time for Mini batch : 0.04256701469421387
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 6 train_loss= 4.25677
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 6 graph_loss= 4.23610
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 6 reg_loss= 0.02067
+05/21/2022 21:47:49 - INFO: Time for Mini batch : 0.041665077209472656
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 7 train_loss= 4.20803
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 7 graph_loss= 4.18739
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 7 reg_loss= 0.02064
+05/21/2022 21:47:49 - INFO: Time for Mini batch : 0.03515005111694336
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 8 train_loss= 4.23214
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 8 graph_loss= 4.21153
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 8 reg_loss= 0.02061
+05/21/2022 21:47:49 - INFO: Time for Mini batch : 0.03473830223083496
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 9 train_loss= 4.18045
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 9 graph_loss= 4.15988
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 9 reg_loss= 0.02057
+05/21/2022 21:47:49 - INFO: Time for Mini batch : 0.03459787368774414
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 10 train_loss= 4.20525
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 10 graph_loss= 4.18471
+05/21/2022 21:47:49 - INFO: Mini batch Iter: 10 reg_loss= 0.02054
+05/21/2022 21:47:49 - INFO: Time for Mini batch : 0.03652000427246094
+05/21/2022 21:47:50 - INFO: Mini batch Iter: 11 train_loss= 4.25415
+05/21/2022 21:47:50 - INFO: Mini batch Iter: 11 graph_loss= 4.23365
+05/21/2022 21:47:50 - INFO: Mini batch Iter: 11 reg_loss= 0.02050
+05/21/2022 21:47:50 - INFO: Time for Mini batch : 0.04081010818481445
+05/21/2022 21:47:50 - INFO: Mini batch Iter: 12 train_loss= 4.16140
+05/21/2022 21:47:50 - INFO: Mini batch Iter: 12 graph_loss= 4.14094
+05/21/2022 21:47:50 - INFO: Mini batch Iter: 12 reg_loss= 0.02046
+05/21/2022 21:47:50 - INFO: Time for Mini batch : 0.03300189971923828
+05/21/2022 21:47:50 - INFO: Mini batch Iter: 13 train_loss= 4.22505
+05/21/2022 21:47:50 - INFO: Mini batch Iter: 13 graph_loss= 4.20463
+05/21/2022 21:47:50 - INFO: Mini batch Iter: 13 reg_loss= 0.02042
+05/21/2022 21:47:50 - INFO: Time for Mini batch : 0.04071807861328125
+05/21/2022 21:47:50 - INFO: Mini batch Iter: 14 train_loss= 4.18944
+05/21/2022 21:47:50 - INFO: Mini batch Iter: 14 graph_loss= 4.16905
+05/21/2022 21:47:50 - INFO: Mini batch Iter: 14 reg_loss= 0.02038
+05/21/2022 21:47:50 - INFO: Time for Mini batch : 0.06732702255249023
+05/21/2022 21:47:50 - INFO: Mini batch Iter: 15 train_loss= 4.09133
+05/21/2022 21:47:50 - INFO: Mini batch Iter: 15 graph_loss= 4.07099
+05/21/2022 21:47:50 - INFO: Mini batch Iter: 15 reg_loss= 0.02034
+05/21/2022 21:47:50 - INFO: Time for Mini batch : 0.036228179931640625
+05/21/2022 21:47:50 - INFO: Mini batch Iter: 16 train_loss= 4.17848
+05/21/2022 21:47:50 - INFO: Mini batch Iter: 16 graph_loss= 4.15817
+05/21/2022 21:47:50 - INFO: Mini batch Iter: 16 reg_loss= 0.02031
+05/21/2022 21:47:50 - INFO: Time for Mini batch : 0.03721976280212402
+05/21/2022 21:47:50 - INFO: Mini batch Iter: 17 train_loss= 4.22914
+05/21/2022 21:47:50 - INFO: Mini batch Iter: 17 graph_loss= 4.20888
+05/21/2022 21:47:50 - INFO: Mini batch Iter: 17 reg_loss= 0.02027
+05/21/2022 21:47:50 - INFO: Time for Mini batch : 0.038526058197021484
+05/21/2022 21:47:50 - INFO: Mini batch Iter: 18 train_loss= 4.20155
+05/21/2022 21:47:50 - INFO: Mini batch Iter: 18 graph_loss= 4.18132
+05/21/2022 21:47:50 - INFO: Mini batch Iter: 18 reg_loss= 0.02023
+05/21/2022 21:47:50 - INFO: Time for Mini batch : 0.06708407402038574
+05/21/2022 21:47:50 - INFO: Mini batch Iter: 19 train_loss= 4.20371
+05/21/2022 21:47:50 - INFO: Mini batch Iter: 19 graph_loss= 4.18352
+05/21/2022 21:47:50 - INFO: Mini batch Iter: 19 reg_loss= 0.02019
+05/21/2022 21:47:50 - INFO: Time for Mini batch : 0.03523731231689453
+05/21/2022 21:47:50 - INFO: Time for epoch : 8.285301923751831
+05/21/2022 21:47:52 - INFO: Val results at epoch 0: Measure (HAD) AUC: 0.5713293776038378
+05/21/2022 21:47:52 - INFO: Test results at epoch 0: Measure (HAD) AUC: 0.5754323948996337
+05/21/2022 21:47:52 - INFO: Best epoch 0
+05/21/2022 21:47:52 - INFO: Best epoch val results defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x140941598>, {'SIGMOID': [0.5748642848125237, 0.5748642848125237], 'HAD': [0.5713293776038378, 0.5713293776038378]})
+
+05/21/2022 21:47:52 - INFO: Best epoch test results defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x114dc97b8>, {'SIGMOID': [0.5858477464966544, 0.5858477464966544], 'HAD': [0.5754323948996337, 0.5754323948996337]})
+
+05/21/2022 21:50:06 - INFO: dict_items([('logtostderr', False), ('alsologtostderr', False), ('log_dir', ''), ('v', -1), ('verbosity', -1), ('logger_levels', {}), ('stderrthreshold', 'fatal'), ('showprefixforinfo', True), ('run_with_pdb', False), ('pdb_post_mortem', False), ('pdb', False), ('run_with_profiling', False), ('profile_file', None), ('use_cprofile_for_profiling', True), ('only_check_args', False), ('op_conversion_fallback_to_while_loop', False), ('test_random_seed', 301), ('test_srcdir', ''), ('test_tmpdir', '/var/folders/05/71tx_fd108v2vnt20mtb21y40000gp/T/absl_testing'), ('test_randomize_ordering_seed', ''), ('xml_output_file', ''), ('base_model', 'DySAT'), ('model', 'default'), ('dataset', 'ba'), ('filepath', './data/DY-BA/'), ('seed_num', 10), ('all_node_num', 100), ('num_features', 1), ('graph_num', 4), ('time_steps', 4), ('GPU_ID', 0), ('epochs', 5), ('batch_size', 5), ('featureless', False), ('max_gradient_norm', 1.0), ('test_freq', 1), ('val_freq', 1), ('neg_sample_size', 10), ('walk_len', 40), ('neg_weight', 1.0), ('learning_rate', 0.001), ('spatial_drop', 0.1), ('temporal_drop', 0.5), ('weight_decay', 0.0005), ('use_residual', False), ('structural_head_config', '16'), ('structural_layer_config', '128'), ('temporal_head_config', '16'), ('temporal_layer_config', '128'), ('position_ffn', True), ('optimizer', 'adam'), ('seed', 7), ('save_dir', 'output'), ('logs_dir', 'logs'), ('csv_dir', 'csv'), ('model_dir', 'model'), ('window', -1)])
+05/21/2022 21:50:06 - INFO: # train: 89, # val: 89, # test: 267
+05/21/2022 21:50:06 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/train.py:189: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+05/21/2022 21:50:06 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/train.py:191: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+05/21/2022 21:50:06 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/train.py:172: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+05/21/2022 21:50:06 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/train.py:177: The name tf.sparse_placeholder is deprecated. Please use tf.compat.v1.sparse_placeholder instead.
+
+05/21/2022 21:50:07 - WARNING: 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+05/21/2022 21:50:08 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:83: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+05/21/2022 21:50:08 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:85: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+05/21/2022 21:50:08 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:220: The name tf.sparse_tensor_dense_matmul is deprecated. Please use tf.sparse.sparse_dense_matmul instead.
+
+05/21/2022 21:50:08 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:226: conv1d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv1D` instead.
+05/21/2022 21:50:08 - WARNING: From /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/tensorflow_core/python/layers/convolutional.py:218: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+05/21/2022 21:50:08 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:236: The name tf.sparse_softmax is deprecated. Please use tf.sparse.softmax instead.
+
+05/21/2022 21:50:08 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:240: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+05/21/2022 21:50:12 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:129: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+05/21/2022 21:50:12 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/layers.py:134: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+05/21/2022 21:50:12 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/models.py:198: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+05/21/2022 21:50:20 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/models/DySAT/models.py:210: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+05/21/2022 21:50:21 - WARNING: From /Users/shiyingdan/PycharmProjects/DySAT_main/train.py:201: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 0 train_loss= 5.38265
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 0 graph_loss= 5.36178
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 0 reg_loss= 0.02087
+05/21/2022 21:50:29 - INFO: Time for Mini batch : 6.591050148010254
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 1 train_loss= 4.89105
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 1 graph_loss= 4.87022
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 1 reg_loss= 0.02083
+05/21/2022 21:50:29 - INFO: Time for Mini batch : 0.032006263732910156
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 2 train_loss= 4.65573
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 2 graph_loss= 4.63493
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 2 reg_loss= 0.02079
+05/21/2022 21:50:29 - INFO: Time for Mini batch : 0.03243279457092285
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 3 train_loss= 4.42926
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 3 graph_loss= 4.40849
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 3 reg_loss= 0.02077
+05/21/2022 21:50:29 - INFO: Time for Mini batch : 0.033377885818481445
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 4 train_loss= 4.22345
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 4 graph_loss= 4.20272
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 4 reg_loss= 0.02073
+05/21/2022 21:50:29 - INFO: Time for Mini batch : 0.03597092628479004
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 5 train_loss= 4.29168
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 5 graph_loss= 4.27097
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 5 reg_loss= 0.02070
+05/21/2022 21:50:29 - INFO: Time for Mini batch : 0.03198885917663574
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 6 train_loss= 4.25677
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 6 graph_loss= 4.23610
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 6 reg_loss= 0.02067
+05/21/2022 21:50:29 - INFO: Time for Mini batch : 0.03306078910827637
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 7 train_loss= 4.20803
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 7 graph_loss= 4.18739
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 7 reg_loss= 0.02064
+05/21/2022 21:50:29 - INFO: Time for Mini batch : 0.033190011978149414
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 8 train_loss= 4.23214
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 8 graph_loss= 4.21153
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 8 reg_loss= 0.02061
+05/21/2022 21:50:29 - INFO: Time for Mini batch : 0.032691001892089844
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 9 train_loss= 4.18045
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 9 graph_loss= 4.15988
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 9 reg_loss= 0.02057
+05/21/2022 21:50:29 - INFO: Time for Mini batch : 0.03841114044189453
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 10 train_loss= 4.20525
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 10 graph_loss= 4.18471
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 10 reg_loss= 0.02054
+05/21/2022 21:50:29 - INFO: Time for Mini batch : 0.03302502632141113
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 11 train_loss= 4.25415
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 11 graph_loss= 4.23365
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 11 reg_loss= 0.02050
+05/21/2022 21:50:29 - INFO: Time for Mini batch : 0.03313779830932617
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 12 train_loss= 4.16140
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 12 graph_loss= 4.14094
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 12 reg_loss= 0.02046
+05/21/2022 21:50:29 - INFO: Time for Mini batch : 0.0331721305847168
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 13 train_loss= 4.22505
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 13 graph_loss= 4.20463
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 13 reg_loss= 0.02042
+05/21/2022 21:50:29 - INFO: Time for Mini batch : 0.03256082534790039
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 14 train_loss= 4.18944
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 14 graph_loss= 4.16905
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 14 reg_loss= 0.02038
+05/21/2022 21:50:29 - INFO: Time for Mini batch : 0.036122798919677734
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 15 train_loss= 4.09133
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 15 graph_loss= 4.07099
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 15 reg_loss= 0.02034
+05/21/2022 21:50:29 - INFO: Time for Mini batch : 0.031638145446777344
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 16 train_loss= 4.17848
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 16 graph_loss= 4.15817
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 16 reg_loss= 0.02031
+05/21/2022 21:50:29 - INFO: Time for Mini batch : 0.03208303451538086
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 17 train_loss= 4.22914
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 17 graph_loss= 4.20888
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 17 reg_loss= 0.02027
+05/21/2022 21:50:29 - INFO: Time for Mini batch : 0.0319371223449707
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 18 train_loss= 4.20155
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 18 graph_loss= 4.18132
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 18 reg_loss= 0.02023
+05/21/2022 21:50:29 - INFO: Time for Mini batch : 0.0328519344329834
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 19 train_loss= 4.20371
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 19 graph_loss= 4.18352
+05/21/2022 21:50:29 - INFO: Mini batch Iter: 19 reg_loss= 0.02019
+05/21/2022 21:50:29 - INFO: Time for Mini batch : 0.032308340072631836
+05/21/2022 21:50:29 - INFO: Time for epoch : 7.2118799686431885
+05/21/2022 21:50:31 - INFO: Val results at epoch 0: Measure (HAD) AUC: 0.5713293776038378
+05/21/2022 21:50:31 - INFO: Test results at epoch 0: Measure (HAD) AUC: 0.5754323948996337
+05/21/2022 21:50:31 - INFO: Mini batch Iter: 0 train_loss= 4.16943
+05/21/2022 21:50:31 - INFO: Mini batch Iter: 0 graph_loss= 4.14928
+05/21/2022 21:50:31 - INFO: Mini batch Iter: 0 reg_loss= 0.02015
+05/21/2022 21:50:31 - INFO: Time for Mini batch : 0.030889034271240234
+05/21/2022 21:50:31 - INFO: Mini batch Iter: 1 train_loss= 4.16303
+05/21/2022 21:50:31 - INFO: Mini batch Iter: 1 graph_loss= 4.14292
+05/21/2022 21:50:31 - INFO: Mini batch Iter: 1 reg_loss= 0.02011
+05/21/2022 21:50:31 - INFO: Time for Mini batch : 0.03205704689025879
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 2 train_loss= 4.21121
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 2 graph_loss= 4.19114
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 2 reg_loss= 0.02007
+05/21/2022 21:50:32 - INFO: Time for Mini batch : 0.0413818359375
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 3 train_loss= 4.18777
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 3 graph_loss= 4.16774
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 3 reg_loss= 0.02003
+05/21/2022 21:50:32 - INFO: Time for Mini batch : 0.031970977783203125
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 4 train_loss= 4.20016
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 4 graph_loss= 4.18017
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 4 reg_loss= 0.01999
+05/21/2022 21:50:32 - INFO: Time for Mini batch : 0.03926706314086914
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 5 train_loss= 4.15980
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 5 graph_loss= 4.13985
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 5 reg_loss= 0.01995
+05/21/2022 21:50:32 - INFO: Time for Mini batch : 0.0390772819519043
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 6 train_loss= 4.18639
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 6 graph_loss= 4.16648
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 6 reg_loss= 0.01991
+05/21/2022 21:50:32 - INFO: Time for Mini batch : 0.03185319900512695
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 7 train_loss= 4.18195
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 7 graph_loss= 4.16208
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 7 reg_loss= 0.01987
+05/21/2022 21:50:32 - INFO: Time for Mini batch : 0.03141021728515625
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 8 train_loss= 4.18165
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 8 graph_loss= 4.16182
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 8 reg_loss= 0.01983
+05/21/2022 21:50:32 - INFO: Time for Mini batch : 0.03265690803527832
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 9 train_loss= 4.18797
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 9 graph_loss= 4.16818
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 9 reg_loss= 0.01979
+05/21/2022 21:50:32 - INFO: Time for Mini batch : 0.032729148864746094
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 10 train_loss= 4.17652
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 10 graph_loss= 4.15677
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 10 reg_loss= 0.01975
+05/21/2022 21:50:32 - INFO: Time for Mini batch : 0.03231406211853027
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 11 train_loss= 4.17868
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 11 graph_loss= 4.15897
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 11 reg_loss= 0.01971
+05/21/2022 21:50:32 - INFO: Time for Mini batch : 0.03011608123779297
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 12 train_loss= 4.18526
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 12 graph_loss= 4.16558
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 12 reg_loss= 0.01967
+05/21/2022 21:50:32 - INFO: Time for Mini batch : 0.03017115592956543
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 13 train_loss= 4.16624
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 13 graph_loss= 4.14661
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 13 reg_loss= 0.01963
+05/21/2022 21:50:32 - INFO: Time for Mini batch : 0.030836820602416992
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 14 train_loss= 4.17823
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 14 graph_loss= 4.15864
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 14 reg_loss= 0.01959
+05/21/2022 21:50:32 - INFO: Time for Mini batch : 0.030622005462646484
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 15 train_loss= 4.15169
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 15 graph_loss= 4.13214
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 15 reg_loss= 0.01955
+05/21/2022 21:50:32 - INFO: Time for Mini batch : 0.030994176864624023
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 16 train_loss= 4.18756
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 16 graph_loss= 4.16805
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 16 reg_loss= 0.01951
+05/21/2022 21:50:32 - INFO: Time for Mini batch : 0.031202077865600586
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 17 train_loss= 4.17398
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 17 graph_loss= 4.15451
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 17 reg_loss= 0.01948
+05/21/2022 21:50:32 - INFO: Time for Mini batch : 0.03114795684814453
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 18 train_loss= 4.18296
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 18 graph_loss= 4.16353
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 18 reg_loss= 0.01944
+05/21/2022 21:50:32 - INFO: Time for Mini batch : 0.03318500518798828
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 19 train_loss= 4.16900
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 19 graph_loss= 4.14960
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 19 reg_loss= 0.01940
+05/21/2022 21:50:32 - INFO: Time for Mini batch : 0.03279304504394531
+05/21/2022 21:50:32 - INFO: Time for epoch : 0.651146650314331
+05/21/2022 21:50:32 - INFO: Val results at epoch 1: Measure (HAD) AUC: 0.5749905314985481
+05/21/2022 21:50:32 - INFO: Test results at epoch 1: Measure (HAD) AUC: 0.5829370590133119
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 0 train_loss= 4.19472
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 0 graph_loss= 4.17536
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 0 reg_loss= 0.01936
+05/21/2022 21:50:32 - INFO: Time for Mini batch : 0.036422014236450195
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 1 train_loss= 4.19677
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 1 graph_loss= 4.17745
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 1 reg_loss= 0.01933
+05/21/2022 21:50:32 - INFO: Time for Mini batch : 0.03850603103637695
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 2 train_loss= 4.17572
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 2 graph_loss= 4.15643
+05/21/2022 21:50:32 - INFO: Mini batch Iter: 2 reg_loss= 0.01929
+05/21/2022 21:50:32 - INFO: Time for Mini batch : 0.05019497871398926
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 3 train_loss= 4.16785
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 3 graph_loss= 4.14860
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 3 reg_loss= 0.01925
+05/21/2022 21:50:33 - INFO: Time for Mini batch : 0.04998493194580078
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 4 train_loss= 4.16284
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 4 graph_loss= 4.14363
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 4 reg_loss= 0.01921
+05/21/2022 21:50:33 - INFO: Time for Mini batch : 0.033555030822753906
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 5 train_loss= 4.18555
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 5 graph_loss= 4.16638
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 5 reg_loss= 0.01917
+05/21/2022 21:50:33 - INFO: Time for Mini batch : 0.03122997283935547
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 6 train_loss= 4.16596
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 6 graph_loss= 4.14682
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 6 reg_loss= 0.01914
+05/21/2022 21:50:33 - INFO: Time for Mini batch : 0.033057212829589844
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 7 train_loss= 4.17528
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 7 graph_loss= 4.15618
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 7 reg_loss= 0.01910
+05/21/2022 21:50:33 - INFO: Time for Mini batch : 0.03098583221435547
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 8 train_loss= 4.17008
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 8 graph_loss= 4.15101
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 8 reg_loss= 0.01906
+05/21/2022 21:50:33 - INFO: Time for Mini batch : 0.03185582160949707
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 9 train_loss= 4.16438
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 9 graph_loss= 4.14536
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 9 reg_loss= 0.01903
+05/21/2022 21:50:33 - INFO: Time for Mini batch : 0.0321810245513916
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 10 train_loss= 4.17926
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 10 graph_loss= 4.16027
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 10 reg_loss= 0.01899
+05/21/2022 21:50:33 - INFO: Time for Mini batch : 0.03118896484375
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 11 train_loss= 4.17527
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 11 graph_loss= 4.15632
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 11 reg_loss= 0.01895
+05/21/2022 21:50:33 - INFO: Time for Mini batch : 0.04052615165710449
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 12 train_loss= 4.17414
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 12 graph_loss= 4.15522
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 12 reg_loss= 0.01892
+05/21/2022 21:50:33 - INFO: Time for Mini batch : 0.042387962341308594
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 13 train_loss= 4.16012
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 13 graph_loss= 4.14123
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 13 reg_loss= 0.01888
+05/21/2022 21:50:33 - INFO: Time for Mini batch : 0.03176116943359375
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 14 train_loss= 4.18627
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 14 graph_loss= 4.16742
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 14 reg_loss= 0.01885
+05/21/2022 21:50:33 - INFO: Time for Mini batch : 0.032485008239746094
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 15 train_loss= 4.18137
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 15 graph_loss= 4.16256
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 15 reg_loss= 0.01881
+05/21/2022 21:50:33 - INFO: Time for Mini batch : 0.03450608253479004
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 16 train_loss= 4.18526
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 16 graph_loss= 4.16648
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 16 reg_loss= 0.01877
+05/21/2022 21:50:33 - INFO: Time for Mini batch : 0.03342270851135254
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 17 train_loss= 4.17574
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 17 graph_loss= 4.15701
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 17 reg_loss= 0.01874
+05/21/2022 21:50:33 - INFO: Time for Mini batch : 0.03249001502990723
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 18 train_loss= 4.17640
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 18 graph_loss= 4.15770
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 18 reg_loss= 0.01870
+05/21/2022 21:50:33 - INFO: Time for Mini batch : 0.03299283981323242
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 19 train_loss= 4.18259
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 19 graph_loss= 4.16393
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 19 reg_loss= 0.01866
+05/21/2022 21:50:33 - INFO: Time for Mini batch : 0.031507015228271484
+05/21/2022 21:50:33 - INFO: Time for epoch : 0.7034661769866943
+05/21/2022 21:50:33 - INFO: Val results at epoch 2: Measure (HAD) AUC: 0.5751167781845726
+05/21/2022 21:50:33 - INFO: Test results at epoch 2: Measure (HAD) AUC: 0.5733282834658923
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 0 train_loss= 4.18076
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 0 graph_loss= 4.16214
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 0 reg_loss= 0.01862
+05/21/2022 21:50:33 - INFO: Time for Mini batch : 0.03254389762878418
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 1 train_loss= 4.17700
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 1 graph_loss= 4.15842
+05/21/2022 21:50:33 - INFO: Mini batch Iter: 1 reg_loss= 0.01859
+05/21/2022 21:50:33 - INFO: Time for Mini batch : 0.03140521049499512
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 2 train_loss= 4.18075
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 2 graph_loss= 4.16221
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 2 reg_loss= 0.01855
+05/21/2022 21:50:34 - INFO: Time for Mini batch : 0.04768991470336914
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 3 train_loss= 4.16654
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 3 graph_loss= 4.14803
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 3 reg_loss= 0.01851
+05/21/2022 21:50:34 - INFO: Time for Mini batch : 0.04952120780944824
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 4 train_loss= 4.17703
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 4 graph_loss= 4.15856
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 4 reg_loss= 0.01847
+05/21/2022 21:50:34 - INFO: Time for Mini batch : 0.04525017738342285
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 5 train_loss= 4.16312
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 5 graph_loss= 4.14469
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 5 reg_loss= 0.01844
+05/21/2022 21:50:34 - INFO: Time for Mini batch : 0.03473496437072754
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 6 train_loss= 4.18279
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 6 graph_loss= 4.16439
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 6 reg_loss= 0.01840
+05/21/2022 21:50:34 - INFO: Time for Mini batch : 0.03432178497314453
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 7 train_loss= 4.17852
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 7 graph_loss= 4.16016
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 7 reg_loss= 0.01836
+05/21/2022 21:50:34 - INFO: Time for Mini batch : 0.03198695182800293
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 8 train_loss= 4.16040
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 8 graph_loss= 4.14208
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 8 reg_loss= 0.01832
+05/21/2022 21:50:34 - INFO: Time for Mini batch : 0.034113168716430664
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 9 train_loss= 4.18377
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 9 graph_loss= 4.16548
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 9 reg_loss= 0.01829
+05/21/2022 21:50:34 - INFO: Time for Mini batch : 0.03166484832763672
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 10 train_loss= 4.21144
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 10 graph_loss= 4.19319
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 10 reg_loss= 0.01825
+05/21/2022 21:50:34 - INFO: Time for Mini batch : 0.03032088279724121
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 11 train_loss= 4.18728
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 11 graph_loss= 4.16907
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 11 reg_loss= 0.01821
+05/21/2022 21:50:34 - INFO: Time for Mini batch : 0.035566091537475586
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 12 train_loss= 4.15800
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 12 graph_loss= 4.13983
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 12 reg_loss= 0.01817
+05/21/2022 21:50:34 - INFO: Time for Mini batch : 0.03201794624328613
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 13 train_loss= 4.17799
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 13 graph_loss= 4.15985
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 13 reg_loss= 0.01813
+05/21/2022 21:50:34 - INFO: Time for Mini batch : 0.032250165939331055
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 14 train_loss= 4.16720
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 14 graph_loss= 4.14911
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 14 reg_loss= 0.01809
+05/21/2022 21:50:34 - INFO: Time for Mini batch : 0.033660888671875
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 15 train_loss= 4.17220
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 15 graph_loss= 4.15414
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 15 reg_loss= 0.01806
+05/21/2022 21:50:34 - INFO: Time for Mini batch : 0.03184986114501953
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 16 train_loss= 4.17446
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 16 graph_loss= 4.15644
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 16 reg_loss= 0.01802
+05/21/2022 21:50:34 - INFO: Time for Mini batch : 0.03145289421081543
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 17 train_loss= 4.17745
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 17 graph_loss= 4.15947
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 17 reg_loss= 0.01798
+05/21/2022 21:50:34 - INFO: Time for Mini batch : 0.031561851501464844
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 18 train_loss= 4.17811
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 18 graph_loss= 4.16016
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 18 reg_loss= 0.01794
+05/21/2022 21:50:34 - INFO: Time for Mini batch : 0.03243207931518555
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 19 train_loss= 4.16541
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 19 graph_loss= 4.14750
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 19 reg_loss= 0.01791
+05/21/2022 21:50:34 - INFO: Time for Mini batch : 0.03202199935913086
+05/21/2022 21:50:34 - INFO: Time for epoch : 0.6906840801239014
+05/21/2022 21:50:34 - INFO: Val results at epoch 3: Measure (HAD) AUC: 0.5705718974876909
+05/21/2022 21:50:34 - INFO: Test results at epoch 3: Measure (HAD) AUC: 0.5728934337695857
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 0 train_loss= 4.19383
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 0 graph_loss= 4.17596
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 0 reg_loss= 0.01787
+05/21/2022 21:50:34 - INFO: Time for Mini batch : 0.03125500679016113
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 1 train_loss= 4.17579
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 1 graph_loss= 4.15796
+05/21/2022 21:50:34 - INFO: Mini batch Iter: 1 reg_loss= 0.01783
+05/21/2022 21:50:34 - INFO: Time for Mini batch : 0.031176090240478516
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 2 train_loss= 4.17920
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 2 graph_loss= 4.16140
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 2 reg_loss= 0.01780
+05/21/2022 21:50:35 - INFO: Time for Mini batch : 0.03303790092468262
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 3 train_loss= 4.18872
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 3 graph_loss= 4.17096
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 3 reg_loss= 0.01776
+05/21/2022 21:50:35 - INFO: Time for Mini batch : 0.032694101333618164
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 4 train_loss= 4.17547
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 4 graph_loss= 4.15774
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 4 reg_loss= 0.01772
+05/21/2022 21:50:35 - INFO: Time for Mini batch : 0.03822803497314453
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 5 train_loss= 4.16136
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 5 graph_loss= 4.14367
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 5 reg_loss= 0.01768
+05/21/2022 21:50:35 - INFO: Time for Mini batch : 0.03373003005981445
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 6 train_loss= 4.15524
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 6 graph_loss= 4.13759
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 6 reg_loss= 0.01765
+05/21/2022 21:50:35 - INFO: Time for Mini batch : 0.03151202201843262
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 7 train_loss= 4.18327
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 7 graph_loss= 4.16566
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 7 reg_loss= 0.01761
+05/21/2022 21:50:35 - INFO: Time for Mini batch : 0.03141140937805176
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 8 train_loss= 4.16236
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 8 graph_loss= 4.14478
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 8 reg_loss= 0.01758
+05/21/2022 21:50:35 - INFO: Time for Mini batch : 0.0312809944152832
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 9 train_loss= 4.16802
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 9 graph_loss= 4.15048
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 9 reg_loss= 0.01754
+05/21/2022 21:50:35 - INFO: Time for Mini batch : 0.03224325180053711
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 10 train_loss= 4.18815
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 10 graph_loss= 4.17065
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 10 reg_loss= 0.01751
+05/21/2022 21:50:35 - INFO: Time for Mini batch : 0.03211688995361328
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 11 train_loss= 4.21397
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 11 graph_loss= 4.19649
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 11 reg_loss= 0.01747
+05/21/2022 21:50:35 - INFO: Time for Mini batch : 0.03115391731262207
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 12 train_loss= 4.17623
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 12 graph_loss= 4.15880
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 12 reg_loss= 0.01744
+05/21/2022 21:50:35 - INFO: Time for Mini batch : 0.034233808517456055
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 13 train_loss= 4.15446
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 13 graph_loss= 4.13706
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 13 reg_loss= 0.01740
+05/21/2022 21:50:35 - INFO: Time for Mini batch : 0.045458078384399414
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 14 train_loss= 4.17755
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 14 graph_loss= 4.16018
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 14 reg_loss= 0.01737
+05/21/2022 21:50:35 - INFO: Time for Mini batch : 0.039259910583496094
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 15 train_loss= 4.16602
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 15 graph_loss= 4.14869
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 15 reg_loss= 0.01733
+05/21/2022 21:50:35 - INFO: Time for Mini batch : 0.03212285041809082
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 16 train_loss= 4.15720
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 16 graph_loss= 4.13990
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 16 reg_loss= 0.01730
+05/21/2022 21:50:35 - INFO: Time for Mini batch : 0.03492999076843262
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 17 train_loss= 4.17730
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 17 graph_loss= 4.16003
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 17 reg_loss= 0.01727
+05/21/2022 21:50:35 - INFO: Time for Mini batch : 0.03199625015258789
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 18 train_loss= 4.16980
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 18 graph_loss= 4.15257
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 18 reg_loss= 0.01723
+05/21/2022 21:50:35 - INFO: Time for Mini batch : 0.033952951431274414
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 19 train_loss= 4.12615
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 19 graph_loss= 4.10896
+05/21/2022 21:50:35 - INFO: Mini batch Iter: 19 reg_loss= 0.01720
+05/21/2022 21:50:35 - INFO: Time for Mini batch : 0.0300600528717041
+05/21/2022 21:50:35 - INFO: Time for epoch : 0.665717601776123
+05/21/2022 21:50:35 - INFO: Val results at epoch 4: Measure (HAD) AUC: 0.5746117914404745
+05/21/2022 21:50:35 - INFO: Test results at epoch 4: Measure (HAD) AUC: 0.5733142560563339
+05/21/2022 21:50:35 - INFO: Best epoch 2
+05/21/2022 21:50:35 - INFO: Best epoch val results defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x137cb6b70>, {'SIGMOID': [0.47146824895846473, 0.47146824895846473], 'HAD': [0.5751167781845726, 0.5751167781845726]})
+
+05/21/2022 21:50:35 - INFO: Best epoch test results defaultdict(<function evaluate_classifier.<locals>.<lambda> at 0x10c0717b8>, {'SIGMOID': [0.5228927323991077, 0.5228927323991077], 'HAD': [0.5733282834658923, 0.5733282834658923]})
+

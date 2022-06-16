@@ -20,7 +20,7 @@ class NodeMinibatchIterator(object):
     context_pairs -- list of (target, context) pairs obtained from random walk sampling.
     batch_size -- size of the minibatches (# nodes)
     """
-    def __init__(self, graphs, features, adjs, placeholders, num_time_steps, context_pairs=None, batch_size=100):
+    def __init__(self, graphs, features, adjs, placeholders, num_time_steps, FLAG, context_pairs=None, batch_size=100):
 
         self.graphs = graphs
         self.features = features
@@ -33,6 +33,7 @@ class NodeMinibatchIterator(object):
         self.context_pairs = context_pairs
         self.max_positive = FLAGS.neg_sample_size
         self.train_nodes = self.graphs[num_time_steps-1].nodes() # all nodes in the graph.
+        # self.train_nodes = FLAGS.all_node_num # all nodes in the graph.
         print ("# train nodes", len(self.train_nodes))
 
     def construct_degs(self):
