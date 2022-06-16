@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d52ad603-2591-4472-9aed-746d0a4af459" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/eval/link_prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/eval/link_prediction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MLP.py" beforeDir="false" afterPath="$PROJECT_DIR$/MLP.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flags.py" beforeDir="false" afterPath="$PROJECT_DIR$/flags.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/DySAT/layers.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/DySAT/layers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/DySAT/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/DySAT/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fsda.py" beforeDir="false" afterPath="$PROJECT_DIR$/fsda.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/minibatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/minibatch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/preprocess.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="156" column="21" selection-start-line="156" selection-start-column="21" selection-end-line="156" selection-end-column="21" />
+            <state relative-caret-position="86">
+              <caret line="191" column="35" selection-start-line="191" selection-start-column="29" selection-end-line="191" selection-end-column="35" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -31,19 +29,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flags.py">
+        <entry file="file://$PROJECT_DIR$/models/DySAT/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="19" column="31" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="31" />
+            <state relative-caret-position="168">
+              <caret line="80" column="31" selection-start-line="80" selection-end-line="81" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flags.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="343">
+              <caret line="37" column="35" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/preprocess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="221" column="35" selection-start-line="221" selection-start-column="33" selection-end-line="221" selection-end-column="35" />
+            <state relative-caret-position="178">
+              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -54,26 +61,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fsda.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+            <state relative-caret-position="210">
+              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/minibatch.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MLP.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="62" column="58" selection-start-line="62" selection-start-column="58" selection-end-line="62" selection-end-column="58" />
+            <state relative-caret-position="330">
+              <caret line="90" column="27" selection-start-line="90" selection-start-column="27" selection-end-line="90" selection-end-column="27" />
               <folding>
                 <element signature="e#188#200#0" expanded="true" />
               </folding>
@@ -82,10 +80,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/DySAT/models.py">
+        <entry file="file://$PROJECT_DIR$/utils/plot_res.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2805">
-              <caret line="187" column="94" selection-start-line="187" selection-start-column="71" selection-end-line="187" selection-end-column="94" />
+            <state relative-caret-position="389">
+              <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+              <folding>
+                <element signature="e#193#211#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,20 +94,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/DySAT/layers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1583">
-              <caret line="125" column="17" selection-start-line="125" selection-start-column="17" selection-end-line="125" selection-end-column="17" />
+            <state relative-caret-position="378">
+              <caret line="168" column="30" selection-start-line="168" selection-start-column="6" selection-end-line="168" selection-end-column="30" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/torch/nn/modules/linear.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="77" column="28" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -131,15 +123,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>test_neg</find>
-      <find>test_freq</find>
-      <find>final_output_embeddings</find>
-      <find>shape</find>
-      <find>features</find>
-      <find>placeholders</find>
-      <find>128</find>
-      <find>SAVE_DIR</find>
-      <find>epochs_embeds</find>
       <find>seed_sets</find>
       <find>feats_tmp</find>
       <find>feats</find>
@@ -155,12 +138,21 @@
       <find>seed_size</find>
       <find>pairs</find>
       <find>random</find>
-      <find>emb</find>
       <find>seed_num</find>
-      <find>train</find>
       <find>Computing</find>
       <find>eval_path</find>
       <find>end ------------------</find>
+      <find>seed_no</find>
+      <find>epochs</find>
+      <find>lear</find>
+      <find>init_optimizer</find>
+      <find>train</find>
+      <find>---------------</find>
+      <find>DySAT</find>
+      <find>StructuralAttentionLayer</find>
+      <find>test</find>
+      <find>sess</find>
+      <find>emb</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -169,7 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/models/DySAT/layers.py" />
         <option value="$PROJECT_DIR$/utils/minibatch.py" />
         <option value="$PROJECT_DIR$/eval/node_prediction.py" />
         <option value="$PROJECT_DIR$/eval/link_prediction.py" />
@@ -177,11 +168,13 @@
         <option value="$PROJECT_DIR$/output/output_ba_1" />
         <option value="$PROJECT_DIR$/output/output_ba_0" />
         <option value="$PROJECT_DIR$/load_emb.py" />
-        <option value="$PROJECT_DIR$/MLP.py" />
+        <option value="$PROJECT_DIR$/utils/preprocess.py" />
         <option value="$PROJECT_DIR$/fsda.py" />
         <option value="$PROJECT_DIR$/flags.py" />
-        <option value="$PROJECT_DIR$/utils/preprocess.py" />
+        <option value="$PROJECT_DIR$/models/DySAT/layers.py" />
         <option value="$PROJECT_DIR$/train.py" />
+        <option value="$PROJECT_DIR$/utils/plot_res.py" />
+        <option value="$PROJECT_DIR$/MLP.py" />
       </list>
     </option>
   </component>
@@ -199,7 +192,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
+    <option name="width" value="455" />
     <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -226,12 +219,6 @@
             <path>
               <item name="DySAT_main" type="b2602c69:ProjectViewProjectNode" />
               <item name="DySAT_main" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="DY-FB" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DySAT_main" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DySAT_main" type="462c0819:PsiDirectoryNode" />
               <item name="eval" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -247,13 +234,20 @@
             <path>
               <item name="DySAT_main" type="b2602c69:ProjectViewProjectNode" />
               <item name="DySAT_main" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="DySAT" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DySAT_main" type="b2602c69:ProjectViewProjectNode" />
               <item name="DySAT_main" type="462c0819:PsiDirectoryNode" />
               <item name="output" type="462c0819:PsiDirectoryNode" />
+              <item name="DY-BA" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DySAT_main" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DySAT_main" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
+              <item name="DY-BA" type="462c0819:PsiDirectoryNode" />
+              <item name="output_5_0" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DySAT_main" type="b2602c69:ProjectViewProjectNode" />
@@ -267,14 +261,18 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/output/DY-BA/emb" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/DY-BA" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/data/DY-BA" />
       <recent name="$PROJECT_DIR$/eval" />
     </key>
   </component>
@@ -290,7 +288,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.train">
+  <component name="RunManager" selected="Python.plot_res">
     <configuration name="MLP" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DySAT_main" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -333,7 +331,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="load_emb" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="plot_res" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DySAT_main" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -341,11 +339,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/load_emb.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/plot_res.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -398,11 +396,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.plot_res" />
+        <item itemvalue="Python.MLP" />
         <item itemvalue="Python.train" />
         <item itemvalue="Python.fsda" />
         <item itemvalue="Python.preprocess" />
-        <item itemvalue="Python.MLP" />
-        <item itemvalue="Python.load_emb" />
       </list>
     </recent_temporary>
   </component>
@@ -422,13 +420,13 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17120343" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20200573" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -588,13 +586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fsda.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run_script.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -605,63 +596,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/minibatch.py">
+    <entry file="file://$PROJECT_DIR$/utils/preprocess.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MLP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="62" column="58" selection-start-line="62" selection-start-column="58" selection-end-line="62" selection-end-column="58" />
+        <state relative-caret-position="178">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
           <folding>
-            <element signature="e#188#200#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/DySAT/models.py">
+    <entry file="file://$PROJECT_DIR$/data/DY-BA/ba.5.seeds">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2805">
-          <caret line="187" column="94" selection-start-line="187" selection-start-column="71" selection-end-line="187" selection-end-column="94" />
+        <state relative-caret-position="-308" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="37" column="35" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/DySAT/layers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1583">
-          <caret line="125" column="17" selection-start-line="125" selection-start-column="17" selection-end-line="125" selection-end-column="17" />
+        <state relative-caret-position="378">
+          <caret line="168" column="30" selection-start-line="168" selection-start-column="6" selection-end-line="168" selection-end-column="30" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flags.py">
+    <entry file="file://$PROJECT_DIR$/utils/minibatch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="31" />
+        <state relative-caret-position="-938">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fsda.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/DySAT/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="80" column="31" selection-start-line="80" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/zipfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="1112" selection-start-line="1112" selection-end-line="1112" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="156" column="21" selection-start-line="156" selection-start-column="21" selection-end-line="156" selection-end-column="21" />
+        <state relative-caret-position="86">
+          <caret line="191" column="35" selection-start-line="191" selection-start-column="29" selection-end-line="191" selection-end-column="35" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/preprocess.py">
+    <entry file="file://$PROJECT_DIR$/utils/plot_res.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="221" column="35" selection-start-line="221" selection-start-column="33" selection-end-line="221" selection-end-column="35" />
+        <state relative-caret-position="389">
+          <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#193#211#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MLP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="90" column="27" selection-start-line="90" selection-start-column="27" selection-end-line="90" selection-end-column="27" />
+          <folding>
+            <element signature="e#188#200#0" expanded="true" />
           </folding>
         </state>
       </provider>

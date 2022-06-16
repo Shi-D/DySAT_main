@@ -11,7 +11,7 @@ import torch
 import numpy as np
 import torch.optim as optim
 import random
-
+import os
 
 class Classifier(torch.nn.Module):
     def __init__(self, dims=[64, 8]):
@@ -41,6 +41,9 @@ class Classifier(torch.nn.Module):
         return self.mlp(x)
 
     def loss(self, predictions, labels, λ):
+        # print(predictions.shape)
+        # print(labels.shape)
+        # print('labels', labels)
         l1 = torch.mean(torch.pow(predictions - labels, 2))  # node-level error
         # l2 = torch.abs(torch.sum(predictions) - torch.sum(labels)) / (
         #             torch.sum(labels) + 1e-5)  # influence spread error
@@ -52,62 +55,79 @@ random.seed(111)
 def load_gt(file_path):
     file_handler = open(file_path, 'r')
     content = file_handler.readlines()
-    gt = content[0]
-    gt = gt.strip('\n')
-    gt = gt.split(' ')
-    print(len(gt))
-    gt = np.array(gt).astype(float)
-    return gt
+    gts = []
+    for con in content:
+        gt = con
+        gt = gt.strip('\n')
+        gt = gt.split(' ')
+        gt = np.array(gt).astype(float)
+        gts.append(gt)
+    return gts
 
 
-load_path = './logs/DySAT_default/output/default_embs_ba_4.npz'
-emb = np.load(load_path, mmap_mode='r', allow_pickle=True)
-emb = emb['data']
-# print(emb)
-print(emb.shape)
-gts = load_gt('./data/DY-BA/ba.4.groundtruth.1')
-print(sum(gts))
-assert 1==0, 'daf'
+seed_size = 5
+seed_num = 10
 epochs = 100
 lr = 0.1
 λ = 0.001
 
-emb = torch.from_numpy(emb)
-gts = torch.Tensor(gts)
+gts = load_gt('./data/DY-BA/ba.{}.groundtruth'.format(seed_size))
 
-mlp = Classifier([128,64,8,1])
-optimizer = optim.Adam(mlp.parameters(), lr=lr)
-batch_size = 10
-batch_i = 0
-batch_num = int(100/batch_size)
+for seed_i in range(seed_num):
+    load_path = './output/Dy-BA/emb_{}/emb_dyba_{}.npz'.format(seed_size, seed_i)
+    out_path = './output/DY-BA/output_{}_1/output_dyba_{}'.format(seed_size, seed_i)
+    if not os.path.exists(out_path):
+        os.makedirs(out_path)
 
-for epoch in range(epochs):
-    for i in range(batch_num):
-        mlp.train()
-        optimizer.zero_grad()
-        output = mlp(emb[i*batch_size:(i+1)*batch_size])
-        loss_train = mlp.loss(output, gts[i*batch_size:(i+1)*batch_size], λ)
+    emb = np.load(load_path, mmap_mode='r', allow_pickle=True)
+    emb = emb['data']
+    gt = gts[seed_i]
+    # print(emb.shape)
+    # print(gt.shape)
+    # print(sum(gt))
 
-        loss_train.backward()
-        optimizer.step()
+    emb = torch.from_numpy(emb)
+    gt = torch.Tensor(gt)
 
-        print('epoch: {:04d}'.format(epoch),
-              'loss: {:.4f}'.format(loss_train.item()))
+    # mlp = Classifier([128,64,8,1])
+    mlp = Classifier([128,64,1])
+    optimizer = optim.Adam(mlp.parameters(), lr=lr)
+    batch_size = 10
+    batch_i = 0
+    batch_num = int(100/batch_size)
+
+    for epoch in range(epochs):
+        for batch_i in range(batch_num):
+            mlp.train()
+            optimizer.zero_grad()
+            output = mlp(emb[batch_i*batch_size:(batch_i+1)*batch_size])
+            loss_train = mlp.loss(output, gt[batch_i*batch_size:(batch_i+1)*batch_size], λ)
+
+            loss_train.backward()
+            optimizer.step()
+
+            mse = torch.mean(torch.abs(output - gt[batch_i*batch_size:(batch_i+1)*batch_size]))
+
+            print('epoch: {:03d}-{:03d}'.format(epoch, batch_i),
+                  'loss: {:.4f}'.format(loss_train.item()),
+                  'mse: {:.4f}'.format(mse.item()),)
+            output = output.detach().numpy()
+            output = np.squeeze(output)
+            # print(output)
+
+        # mlp.eval()
+        # optimizer.zero_grad()
+        output = mlp(emb)
+        loss_test = mlp.loss(output, gt, λ)
+
+        # loss_test.backward()
+        # optimizer.step()
+        mse = torch.mean(torch.abs(output - gt))
+        print('test loss: {}'.format(loss_test.item()),
+              'mse: {:.4f}'.format(mse.item()))
         output = output.detach().numpy()
         output = np.squeeze(output)
-        print(output)
+    # print(output)
 
-    mlp.eval()
-    optimizer.zero_grad()
-    output = mlp(emb)
-    loss_train = mlp.loss(output, gts, λ)
-
-    loss_train.backward()
-    optimizer.step()
-    output = output.detach().numpy()
-    output = np.squeeze(output)
-
-print(output)
-
-output = np.array(output)
-np.savez('./output/output_ba_2', data=output)
+    output = np.array(output)
+    np.savez(out_path, data=output)

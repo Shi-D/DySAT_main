@@ -8,9 +8,8 @@
 # @Homepage : https://shi-d.github.io/
 
 import numpy as np
-a = [0 for i in range(10)]
-b = [2,4,5]
-b = np.array(b)
-a = np.array(a)
-a[b]=1
+
+a = np.load('./output/DY-BA/output_dyba_0.npz', mmap_mode='r', allow_pickle=True)
+a = a['data']
 print(a)
+print(a.shape)

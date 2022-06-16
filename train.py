@@ -67,7 +67,7 @@ SAVE_DIR = output_dir + FLAGS.save_dir
 CSV_DIR = output_dir + FLAGS.csv_dir
 MODEL_DIR = output_dir + FLAGS.model_dir
 
-path_emb = './output/DY-FB/'
+path_emb = './output/DY-BA/'
 
 if not os.path.isdir(path_emb):
     os.mkdir(path_emb)
@@ -180,16 +180,17 @@ num_features = feats[0].shape[1]
 assert num_time_steps == len(adjs), 'num_time_steps != len(adjs)'  # So that, (t+1) can be predicted.
 
 
-print("Initializing session")
-# Initialize session
-config = tf.ConfigProto()
-config.gpu_options.allow_growth = True
-sess = tf.Session(config=config)
 
 placeholders = construct_placeholders(num_time_steps)
 
 
-for s in range(FLAGS.seed_num):
+for s in range(12, FLAGS.seed_num):
+    print("Initializing session")
+    # Initialize session
+    config = tf.ConfigProto()
+    config.gpu_options.allow_growth = True
+    sess = tf.Session(config=config)
+
     print('seed_no:', s)
     feats_tmp = np.repeat(np.reshape(feats[s], (1, all_node_num, 1)), num_time_steps, axis=0)
     # feats [51, 100, 1]
@@ -293,5 +294,8 @@ for s in range(FLAGS.seed_num):
     print(len(emb))  # 100
     print(emb.shape)  # (100, 128)
     # np.savez(path_emb + 'output_dyfb_'+str(s) +'.npz', data=emb)
-    np.savez('{}output_dyfb_{}.npz'.format(path_emb, str(s)), data=emb)
+    np.savez('{}emb_dyba_{}.npz'.format(path_emb, str(s)), data=emb)
     # np.savez(SAVE_DIR + '/{}_embs_{}_{}.npz'.format(FLAGS.model, FLAGS.dataset, FLAGS.time_steps), data=emb)
+
+    # sess.close()
+    tf.reset_default_graph()
