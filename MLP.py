@@ -89,8 +89,8 @@ for seed_i in range(seed_num):
     emb = torch.from_numpy(emb)
     gt = torch.Tensor(gt)
 
-    # mlp = Classifier([128,64,8,1])
-    mlp = Classifier([128,64,1])
+    mlp = Classifier([128,64,8,1])
+    # mlp = Classifier([128,64,1])
     optimizer = optim.Adam(mlp.parameters(), lr=lr)
     batch_size = 10
     batch_i = 0
