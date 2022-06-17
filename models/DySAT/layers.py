@@ -123,7 +123,7 @@ class TemporalAttentionLayer(Layer):
         # 4: Masked (causal) softmax to compute attention weights.
 
         diag_val = tf.ones_like(outputs[0, :, :])  # [T, T]
-        tril = tf.contrib.linalg.LinearOperatorLowerTriangular(diag_val).to_dense()  # [T, T]
+        tril = tf.linalg.LinearOperatorLowerTriangular(diag_val).to_dense()  # [T, T]
         masks = tf.tile(tf.expand_dims(tril, 0), [tf.shape(outputs)[0], 1, 1])  # [hN, T, T]
         padding = tf.ones_like(masks) * (-2 ** 32 + 1)
         outputs = tf.where(tf.equal(masks, 0), padding, outputs)  # [h*N, T, T]

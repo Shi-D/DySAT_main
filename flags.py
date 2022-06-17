@@ -14,12 +14,19 @@ FLAGS = flags.FLAGS
 flags.DEFINE_string('base_model', 'DySAT', 'Base model string. (DySAT/IncSAT)')
 flags.DEFINE_string('model', 'default', 'Model string.')
 
-flags.DEFINE_string('dataset', 'Enron_new', 'Dataset string.')
-flags.DEFINE_integer('time_steps', 3, '# time steps to train (+1)') # Predict at next time step.
+
+flags.DEFINE_string('dataset', 'ba', 'Dataset string.')
+flags.DEFINE_string('filepath','./data/DY-BA/','file directory')
+flags.DEFINE_integer('seed_size', 5, 'seed size')
+flags.DEFINE_integer('seed_num', 50, 'seed num')
+flags.DEFINE_integer('all_node_num', 100, 'all node num')
+flags.DEFINE_integer('num_features', 1, 'features dims')
+flags.DEFINE_integer('graph_num', 5, 'graph num')
+flags.DEFINE_integer('time_steps', 5, '# time steps to train (+1)') # Predict at next time step.
 flags.DEFINE_integer('GPU_ID', 0, 'GPU_ID')
-flags.DEFINE_integer('epochs', 1, 'Number of epochs to train.')
-flags.DEFINE_integer('batch_size', 512, 'Batch size (# nodes)')
-flags.DEFINE_boolean('featureless', True, 'Use 1-hot instead of features')
+flags.DEFINE_integer('epochs', 5, 'Number of epochs to train.')
+flags.DEFINE_integer('batch_size', 5, 'Batch size (# nodes)')
+flags.DEFINE_boolean('featureless', False, 'Use 1-hot instead of features')
 flags.DEFINE_float('max_gradient_norm', 1.0, 'Clip gradients to this norm')
 
 # Evaluation settings.
@@ -30,7 +37,7 @@ flags.DEFINE_integer('val_freq', 1, 'Validation frequency')
 flags.DEFINE_integer('neg_sample_size', 10, 'number of negative samples')
 flags.DEFINE_integer('walk_len', 40, 'Walk len')
 flags.DEFINE_float('neg_weight', 1, 'Wt. for negative samples')
-flags.DEFINE_float('learning_rate', 0.001, 'Initial learning rate for self-attention model.')
+flags.DEFINE_float('learning_rate', 0.01, 'Initial learning rate for self-attention model.')
 
 flags.DEFINE_float('spatial_drop', 0.1, 'attn Dropout (1 - keep probability).')
 flags.DEFINE_float('temporal_drop', 0.5, 'ffd Dropout rate (1 - keep probability).')
@@ -53,7 +60,7 @@ flags.DEFINE_integer('seed', 7, 'Random seed')
 
 # Directory structure.
 flags.DEFINE_string('save_dir', "output", 'Save dir defaults to output/ within the base directory')
-flags.DEFINE_string('log_dir', "log", 'Log dir defaults to log/ within the base directory')
+flags.DEFINE_string('logs_dir', "logs", 'Log dir defaults to log/ within the base directory')
 flags.DEFINE_string('csv_dir', "csv", 'CSV dir defaults to csv/ within the base directory')
 flags.DEFINE_string('model_dir', "model", 'Model dir defaults to model/ within the base directory')
 flags.DEFINE_integer('window', -1, 'Window for temporal attention (default : -1 => full)')
