@@ -44,6 +44,8 @@ tf.set_random_seed(123)
 
 flags = tf.app.flags
 FLAGS = flags.FLAGS
+# print('flags', FLAGS.log_dir)
+# print('----------')
 
 # Assumes a saved base model as input and model name to get the right directory.
 output_dir = "./logs/{}_{}/".format(FLAGS.base_model, FLAGS.model)
@@ -145,6 +147,8 @@ adj_train = []
 feats_train = []
 num_features_nonzero = []
 loaded_pairs = False
+
+assert 1==0, 'fdas'
 
 # Load training context pairs (or compute them if necessary)
 print('# training context pairs ------------------')
