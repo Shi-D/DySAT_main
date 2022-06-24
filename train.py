@@ -67,22 +67,22 @@ SAVE_DIR = output_dir + FLAGS.save_dir
 CSV_DIR = output_dir + FLAGS.csv_dir
 MODEL_DIR = output_dir + FLAGS.model_dir
 
-path_emb = './output/DY-BA/'
+path_emb = './output/DY-FB/emb_100/'
 
 if not os.path.isdir(path_emb):
-    os.mkdir(path_emb)
+    os.makedirs(path_emb)
 
 if not os.path.isdir(LOG_DIR):
-    os.mkdir(LOG_DIR)
+    os.makedirs(LOG_DIR)
 
 if not os.path.isdir(SAVE_DIR):
-    os.mkdir(SAVE_DIR)
+    os.makedirs(SAVE_DIR)
 
 if not os.path.isdir(CSV_DIR):
-    os.mkdir(CSV_DIR)
+    os.makedirs(CSV_DIR)
 
 if not os.path.isdir(MODEL_DIR):
-    os.mkdir(MODEL_DIR)
+    os.makedirs(MODEL_DIR)
 
 os.environ["CUDA_VISIBLE_DEVICES"] = str(FLAGS.GPU_ID)
 
@@ -184,7 +184,7 @@ assert num_time_steps == len(adjs), 'num_time_steps != len(adjs)'  # So that, (t
 placeholders = construct_placeholders(num_time_steps)
 
 
-for s in range(12, FLAGS.seed_num):
+for s in range(1, FLAGS.seed_num):
     print("Initializing session")
     # Initialize session
     config = tf.ConfigProto()
@@ -218,7 +218,7 @@ for s in range(12, FLAGS.seed_num):
         minibatchIterator.shuffle()
         epoch_loss = 0.0
         it = 0
-        print('Epoch: %04d' % (epoch + 1))
+        print('Epoch: %04d' % (epoch + 1), 'Timestamp:', time.time())
         epoch_time = 0.0
         while not minibatchIterator.end():
             # Construct feed dictionary
@@ -294,7 +294,7 @@ for s in range(12, FLAGS.seed_num):
     print(len(emb))  # 100
     print(emb.shape)  # (100, 128)
     # np.savez(path_emb + 'output_dyfb_'+str(s) +'.npz', data=emb)
-    np.savez('{}emb_dyba_{}.npz'.format(path_emb, str(s)), data=emb)
+    np.savez('{}emb_dyfb_{}.npz'.format(path_emb, str(s)), data=emb)
     # np.savez(SAVE_DIR + '/{}_embs_{}_{}.npz'.format(FLAGS.model, FLAGS.dataset, FLAGS.time_steps), data=emb)
 
     # sess.close()
