@@ -15,14 +15,14 @@ flags.DEFINE_string('base_model', 'DySAT', 'Base model string. (DySAT/IncSAT)')
 flags.DEFINE_string('model', 'default', 'Model string.')
 
 
-flags.DEFINE_string('dataset', 'ba', 'Dataset string.')
-flags.DEFINE_string('filepath','./data/DY-BA/','file directory')
-flags.DEFINE_integer('seed_size', 5, 'seed size')
-flags.DEFINE_integer('seed_num', 50, 'seed num')
-flags.DEFINE_integer('all_node_num', 100, 'all node num')
+flags.DEFINE_string('dataset', 'facebook', 'Dataset string.')
+flags.DEFINE_string('filepath','./data/DY-FB/','file directory')
+flags.DEFINE_integer('seed_size', 100, 'seed size')
+flags.DEFINE_integer('seed_num', 100, 'seed num')
+flags.DEFINE_integer('all_node_num', 4039, 'all node num')
 flags.DEFINE_integer('num_features', 1, 'features dims')
-flags.DEFINE_integer('graph_num', 5, 'graph num')
-flags.DEFINE_integer('time_steps', 5, '# time steps to train (+1)') # Predict at next time step.
+flags.DEFINE_integer('graph_num', 10, 'graph num')
+flags.DEFINE_integer('time_steps', 10, '# time steps to train (+1)') # Predict at next time step.
 flags.DEFINE_integer('GPU_ID', 0, 'GPU_ID')
 flags.DEFINE_integer('epochs', 5, 'Number of epochs to train.')
 flags.DEFINE_integer('batch_size', 5, 'Batch size (# nodes)')
