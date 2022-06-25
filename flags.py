@@ -15,16 +15,16 @@ flags.DEFINE_string('base_model', 'DySAT', 'Base model string. (DySAT/IncSAT)')
 flags.DEFINE_string('model', 'default', 'Model string.')
 
 
-flags.DEFINE_string('dataset', 'facebook', 'Dataset string.')
-flags.DEFINE_string('filepath','./data/DY-FB/','file directory')
-flags.DEFINE_integer('seed_size', 100, 'seed size')
-flags.DEFINE_integer('seed_num', 100, 'seed num')
-flags.DEFINE_integer('all_node_num', 4039, 'all node num')
+flags.DEFINE_string('dataset', 'epinions', 'Dataset string.')
+flags.DEFINE_string('filepath','./data/DY-EPINIONS/','file directory')
+flags.DEFINE_integer('seed_size', 50, 'seed size')
+flags.DEFINE_integer('seed_num', 50, 'seed num')
+flags.DEFINE_integer('all_node_num', 1264, 'all node num')
 flags.DEFINE_integer('num_features', 1, 'features dims')
-flags.DEFINE_integer('graph_num', 10, 'graph num')
-flags.DEFINE_integer('time_steps', 10, '# time steps to train (+1)') # Predict at next time step.
+flags.DEFINE_integer('graph_num', 5, 'graph num')
+flags.DEFINE_integer('time_steps', 5, '# time steps to train (+1)') # Predict at next time step.
 flags.DEFINE_integer('GPU_ID', 0, 'GPU_ID')
-flags.DEFINE_integer('epochs', 5, 'Number of epochs to train.')
+flags.DEFINE_integer('epochs', 3, 'Number of epochs to train.')
 flags.DEFINE_integer('batch_size', 5, 'Batch size (# nodes)')
 flags.DEFINE_boolean('featureless', False, 'Use 1-hot instead of features')
 flags.DEFINE_float('max_gradient_norm', 1.0, 'Clip gradients to this norm')
@@ -60,7 +60,7 @@ flags.DEFINE_integer('seed', 7, 'Random seed')
 
 # Directory structure.
 flags.DEFINE_string('save_dir', "output", 'Save dir defaults to output/ within the base directory')
-flags.DEFINE_string('log_dir', "log", 'Log dir defaults to log/ within the base directory')
+# flags.DEFINE_string('log_dir', "log", 'Log dir defaults to log/ within the base directory')
 flags.DEFINE_string('csv_dir', "csv", 'CSV dir defaults to csv/ within the base directory')
 flags.DEFINE_string('model_dir', "model", 'Model dir defaults to model/ within the base directory')
 flags.DEFINE_integer('window', -1, 'Window for temporal attention (default : -1 => full)')
