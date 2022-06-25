@@ -9,7 +9,10 @@
 
 import numpy as np
 
-a = np.load('./output/DY-BA/output_dyba_0.npz', mmap_mode='r', allow_pickle=True)
+a = np.load('./output/DY-EPINIONS/emb_50/emb_dydpinions_0.npz', mmap_mode='r', allow_pickle=True)
 a = a['data']
 print(a)
-print(a.shape)
+
+b = np.load('./output/DY-EPINIONS/emb_50/emb_dyepinions_0.npz', mmap_mode='r', allow_pickle=True)
+b = b['data']
+print(b)
