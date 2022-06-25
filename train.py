@@ -148,8 +148,6 @@ feats_train = []
 num_features_nonzero = []
 loaded_pairs = False
 
-assert 1==0, 'fdas'
-
 # Load training context pairs (or compute them if necessary)
 print('# training context pairs ------------------')
 context_pairs_train = get_context_pairs(graphs, num_time_steps, FLAGS.seed_size, FLAGS.filepath)
