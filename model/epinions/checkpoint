@@ -1,0 +1,2 @@
+model_checkpoint_path: "dysat_lr0.01_size50_time5"
+all_model_checkpoint_paths: "dysat_lr0.01_size50_time5"
