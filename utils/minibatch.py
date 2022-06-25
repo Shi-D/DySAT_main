@@ -32,9 +32,9 @@ class NodeMinibatchIterator(object):
         self.degs = self.construct_degs()
         self.context_pairs = context_pairs
         self.max_positive = FLAGS.neg_sample_size
-        self.train_nodes = self.graphs[num_time_steps-1].nodes() # all nodes in the graph.
+        self.train_nodes = self.graphs[num_time_steps-1].nodes()  # all nodes in the graph.
         # self.train_nodes = FLAGS.all_node_num # all nodes in the graph.
-        print ("# train nodes", len(self.train_nodes))
+        print("# train nodes", len(self.train_nodes))
 
     def construct_degs(self):
         """ Compute node degrees in each graph snapshot."""
@@ -98,7 +98,7 @@ class NodeMinibatchIterator(object):
         start_idx = self.batch_num * self.batch_size
         self.batch_num += 1
         end_idx = min(start_idx + self.batch_size, len(self.train_nodes))
-        batch_nodes = self.train_nodes[start_idx : end_idx]
+        batch_nodes = self.train_nodes[start_idx: end_idx]
         return self.batch_feed_dict(batch_nodes)
 
     def shuffle(self):
@@ -110,5 +110,6 @@ class NodeMinibatchIterator(object):
 
     def test_reset(self):
         """ Reset batch number"""
-        self.train_nodes =  self.graphs[self.num_time_steps-1].nodes()
+        self.train_nodes = self.graphs[self.num_time_steps-1].nodes()
+        self.train_nodes = sorted(self.train_nodes)
         self.batch_num = 0

@@ -148,16 +148,17 @@ feats_train = []
 num_features_nonzero = []
 loaded_pairs = False
 
+
 # Load training context pairs (or compute them if necessary)
-print('# training context pairs ------------------')
+print('# training context pairs')
 context_pairs_train = get_context_pairs(graphs, num_time_steps, FLAGS.seed_size, FLAGS.filepath)
-print('# End training context pairs ------------------')
+print('# End training context pairs')
 
 # Load evaluation data.
-print('# Load evaluation data ------------------')
+print('# Load evaluation data')
 train_edges, train_edges_false, val_edges, val_edges_false, test_edges, test_edges_false = \
     get_evaluation_data(adj_sparse, num_time_steps, FLAGS.seed_size, FLAGS.filepath)
-print('# End Load evaluation data ------------------')
+print('# End Load evaluation data')
 
 # Create the adj_train so that it includes nodes from (t+1) but only edges from t: this is for the purpose of
 # inductive testing.
@@ -184,9 +185,12 @@ assert num_time_steps == len(adjs), 'num_time_steps != len(adjs)'  # So that, (t
 placeholders = construct_placeholders(num_time_steps)
 
 
-check_file = "./model/"+str(FLAGS.dataset)+"/dysat_lr"+str(FLAGS.learning_rate)+"_size"+str(FLAGS.seed_size)+"_time"+str(FLAGS.time_steps)+"_1"
-if not os.path.isdir(check_file):
-    os.makedirs(check_file)
+check_file = "./model/"+str(FLAGS.dataset)+"/dysat_lr"+str(FLAGS.learning_rate)+"_size"+str(FLAGS.seed_size)+"_time"+str(FLAGS.time_steps)
+# check_file = "./model/"+str(FLAGS.dataset)
+
+# if not os.path.isdir(check_file):
+#     os.makedirs(check_file)
+
 
 
 feats_tmp = np.repeat(np.reshape(feats[0], (1, all_node_num, 1)), num_time_steps, axis=0)
@@ -204,7 +208,7 @@ for s in range(0, FLAGS.seed_num):
     config.gpu_options.allow_growth = True
     sess = tf.Session(config=config)
 
-    print('seed_no:', s)
+    print('-----------------------------------seed_no:', s)
     feats_tmp = np.repeat(np.reshape(feats[s], (1, all_node_num, 1)), num_time_steps, axis=0)
     # feats [51, 100, 1]
 
@@ -216,11 +220,12 @@ for s in range(0, FLAGS.seed_num):
     minibatchIterator = NodeMinibatchIterator(graphs, feats_train, adj_train,
                                               placeholders, num_time_steps, FLAGS, batch_size=FLAGS.batch_size,
                                               context_pairs=context_pairs_train)
-    print("# training batches per epoch", minibatchIterator.num_training_batches())
 
 
     sess.run(tf.global_variables_initializer())
     saver = tf.train.Saver()
+    saver.restore(sess, check_file)
+    # saver = tf.train.import_meta_graph("Model/model.ckpt.meta")
 
     # Result accumulator variables.
     epochs_test_result = defaultdict(lambda: [])
@@ -228,92 +233,44 @@ for s in range(0, FLAGS.seed_num):
     epochs_embeds = []
     epochs_attn_wts_all = []
 
-    for epoch in range(FLAGS.epochs):  # 每个种子集都有一个epoch
+    for epoch in range(1):  # 每个种子集都有一个epoch
         minibatchIterator.shuffle()
-        epoch_loss = 0.0
-        it = 0
-        print('Epoch: %04d' % (epoch + 1), 'Timestamp:', time.time())
-        epoch_time = 0.0
-        while not minibatchIterator.end():
-            # Construct feed dictionary
-            feed_dict = minibatchIterator.next_minibatch_feed_dict()
-            feed_dict.update({placeholders['spatial_drop']: FLAGS.spatial_drop})
-            feed_dict.update({placeholders['temporal_drop']: FLAGS.temporal_drop})
-            t = time.time()
-            # Training step
-            _, train_cost, graph_cost, reg_cost = sess.run([model.opt_op, model.loss, model.graph_loss, model.reg_loss],
-                                                           feed_dict=feed_dict)
-            epoch_time += time.time() - t
-            # Print results
-            logging.info("Mini batch Iter: {} train_loss= {:.5f}".format(it, train_cost))
-            logging.info("Mini batch Iter: {} graph_loss= {:.5f}".format(it, graph_cost))
-            logging.info("Mini batch Iter: {} reg_loss= {:.5f}".format(it, reg_cost))
-            logging.info("Time for Mini batch : {}".format(time.time() - t))
+        feed_dict = minibatchIterator.next_minibatch_feed_dict()
+        feed_dict.update({placeholders['spatial_drop']: FLAGS.spatial_drop})
+        feed_dict.update({placeholders['temporal_drop']: FLAGS.temporal_drop})
 
-            epoch_loss += train_cost
-            it += 1
+        minibatchIterator.test_reset()
+        feed_dict.update({placeholders['spatial_drop']: 0.0})
+        feed_dict.update({placeholders['temporal_drop']: 0.0})
+        if FLAGS.window < 0:
+            assert FLAGS.time_steps == model.final_output_embeddings.get_shape()[1]
+        # emb = sess.run(model.final_output_embeddings, feed_dict=feed_dict)[:, model.final_output_embeddings.get_shape()[1] - 2, :]  # (100, 4, 128)
+        emb = sess.run(model.final_output_embeddings, feed_dict=feed_dict)[:, -1, :]  # (100, 4, 128)
+        emb = np.array(emb)  # (100, 128)
+        # Use external classifier to get validation and test results.
+        val_results, test_results, _, _ = evaluate_classifier(train_edges,
+                                                              train_edges_false, val_edges, val_edges_false, test_edges,
+                                                              test_edges_false, emb, emb)
 
-        print("Time for epoch ", epoch_time)
-        logging.info("Time for epoch : {}".format(epoch_time))
-        if (epoch + 1) % FLAGS.test_freq == 0:
-            minibatchIterator.test_reset()
-            emb = []
-            feed_dict.update({placeholders['spatial_drop']: 0.0})
-            feed_dict.update({placeholders['temporal_drop']: 0.0})
-            if FLAGS.window < 0:
-                assert FLAGS.time_steps == model.final_output_embeddings.get_shape()[1]
-            # emb = sess.run(model.final_output_embeddings, feed_dict=feed_dict)[:, model.final_output_embeddings.get_shape()[1] - 2, :]  # (100, 4, 128)
-            emb = sess.run(model.final_output_embeddings, feed_dict=feed_dict)[:, -1, :]  # (100, 4, 128)
-            emb = np.array(emb)  # (100, 128)
-            # Use external classifier to get validation and test results.
-            val_results, test_results, _, _ = evaluate_classifier(train_edges,
-                                                                  train_edges_false, val_edges, val_edges_false, test_edges,
-                                                                  test_edges_false, emb, emb)
+        epoch_auc_val = val_results["HAD"][1]
+        epoch_auc_test = test_results["HAD"][1]
 
-            epoch_auc_val = val_results["HAD"][1]
-            epoch_auc_test = test_results["HAD"][1]
+        print("Epoch {}, Val AUC {}".format(epoch, epoch_auc_val))
+        print("Epoch {}, Test AUC {}".format(epoch, epoch_auc_test))
+        logging.info("Val results at epoch {}: Measure ({}) AUC: {}".format(epoch, "HAD", epoch_auc_val))
+        logging.info("Test results at epoch {}: Measure ({}) AUC: {}".format(epoch, "HAD", epoch_auc_test))
 
-            print("Epoch {}, Val AUC {}".format(epoch, epoch_auc_val))
-            print("Epoch {}, Test AUC {}".format(epoch, epoch_auc_test))
-            logging.info("Val results at epoch {}: Measure ({}) AUC: {}".format(epoch, "HAD", epoch_auc_val))
-            logging.info("Test results at epoch {}: Measure ({}) AUC: {}".format(epoch, "HAD", epoch_auc_test))
-
-            epochs_test_result["HAD"].append(epoch_auc_test)
-            epochs_val_result["HAD"].append(epoch_auc_val)
-            epochs_embeds.append(emb)
-        epoch_loss /= it
-        print("Mean Loss at epoch {} : {}".format(epoch, epoch_loss))
+        epochs_test_result["HAD"].append(epoch_auc_test)
+        epochs_val_result["HAD"].append(epoch_auc_val)
+        epochs_embeds.append(emb)
 
 
-
-    # Choose best model by validation set performance.
-    best_epoch = epochs_val_result["HAD"].index(max(epochs_val_result["HAD"]))
-
-    print("Best epoch ", best_epoch)
-    logging.info("Best epoch {}".format(best_epoch))
-
-    # val_results, test_results, _, _ = evaluate_classifier(train_edges, train_edges_false, val_edges, val_edges_false,
-    #                                                       test_edges, test_edges_false, epochs_embeds[best_epoch],
-    #                                                       epochs_embeds[best_epoch])
-
-    print("Best epoch val results {}\n".format(val_results))
-    print("Best epoch test results {}\n".format(test_results))
-
-    logging.info("Best epoch val results {}\n".format(val_results))
-    logging.info("Best epoch test results {}\n".format(test_results))
-
-    write_to_csv(val_results, output_file, FLAGS.model, FLAGS.dataset, num_time_steps, mod='val')
-    write_to_csv(test_results, output_file, FLAGS.model, FLAGS.dataset, num_time_steps, mod='test')
-
-    # Save final embeddings in the save directory.
-    emb = epochs_embeds[best_epoch]
     print(len(emb))  # 100
     print(emb.shape)  # (100, 128)
     # np.savez(path_emb + 'output_dyfb_'+str(s) +'.npz', data=emb)
-    np.savez('{}emb_dyfb_{}.npz'.format(path_emb, str(s)), data=emb)
+    np.savez('{}emb_dyepinions_{}.npz'.format(path_emb, str(s)), data=emb)
     # np.savez(SAVE_DIR + '/{}_embs_{}_{}.npz'.format(FLAGS.model, FLAGS.dataset, FLAGS.time_steps), data=emb)
 
     # sess.close()
     # tf.reset_default_graph()
 
-    saver.save(sess, check_file)
